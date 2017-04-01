@@ -20,7 +20,7 @@
 
 Rancho requires, at minimum, a SASS compiler and [Autoprefixer](https://github.com/postcss/autoprefixer) to use. The included package.json file assumes a [Node](https://nodejs.org/en/) and [Gulp](http://gulpjs.com/) based workflow and will handle dependency installations for you. Simply run ```npm install``` on the command line tool of your choice to get cooking.
 
-- [Download the latest Rancho release](https://github.com/headtocode/rancho/archive/rancho-1.0.0-alpha.1.zip)
+- [Download the latest Rancho release](https://github.com/headtocode/Rancho/archive/master.zip)
 - Make sure you have Node and Gulp installed globally
 - Run ```npm install``` in the project directory
 - Run ```gulp watch``` to watch for changes and auto-compile upon saving
