@@ -1,10 +1,10 @@
 <div align="center">
-	<h1>
-      <a href="http://rancho.run">
-          <img src="http://rancho.run/assets/images/rancho.svg" height="40" width="210" alt="Rancho">
-      </a>
-    </h1>
-    <p>Rancho is a fast and well designed HTML and SCSS framework for building responsive web pages and applications.</p>
+	<p>
+    <a href="http://rancho.run">
+        <img src="http://rancho.run/assets/images/rancho.svg" height="40" width="210" alt="Rancho">
+    </a>
+  </p>
+  <p>Rancho is a fast and well designed HTML and SCSS framework for building responsive web pages and applications.</p>
 </div>
 
 ## Table of Contents
@@ -71,6 +71,8 @@ The Rancho Framework is designed and mantained by [Peter Medina](http://petermed
 - [Accessible Modal Window](https://github.com/scottaohara/accessible_modal_window) by [Scott O&rsquo;Hara](https://github.com/scottaohara)
 - [Accessible Tabs](http://simplyaccessible.com/article/danger-aria-tabs/) by [Jeff Smith](https://github.com/jeffsmith)
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome) by [Dave Gandy](https://github.com/davegandy)
+
+Rancho uses several [Bootstrap 4](https://github.com/twbs/bootstrap/tree/v4-dev) class names to ease the learning curve where appropriate.
 
 ## Copyright and License
 
