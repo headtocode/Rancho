@@ -1,0 +1,33 @@
+///
+// Rancho Config - Forms
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Form Input Border Colors
+$color-border-inputs: $color-border !default;
+$color-border-inputs-foc: color(brand) !default;
+
+// Form Input Borders
+$border-input: $border-width-u1 solid $color-border-inputs !default;
+$border-input-foc: $border-width-u1 solid $color-border-inputs-foc !default;
+
+// Form Input Border Radius
+$has-border-radius-input: 'true';
+$border-radius-input: $border-radius;
+
+// Form Input Background Colors
+$color-input-bg: #fafafa;
+$color-input-bg-foc: color(white);
+$color-input-bg-disabled: darken($color-input-bg, 10%);
+
+// Form Input Font Colors
+$color-input-text: $color-font;
+$color-input-text-foc: $color-input-text;
+
+//  Form Input Labels and Legends
+$font-weight-input-label: $font-weight-bold;
+$font-weight-input-legend: $font-weight-bold;
+$line-height-input-label: 2;
+$spacer-bottom-input-label: 1.5rem;

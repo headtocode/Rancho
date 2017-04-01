@@ -1,0 +1,34 @@
+/**
+ * Pagination - Page Numbers
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.page-numbers {
+  display: none;
+}
+
+.page-numbers.next,
+.page-numbers.prev {
+  display: block;
+  padding: spacer(y, u1) spacer(x);
+}
+
+.page-numbers.current {
+  background: $color-link-hov;
+}
+
+@media screen and (min-width: $media-query-width-md) {
+  .page-numbers {
+    display: block;
+    padding: spacer(y, u1) spacer(x, d1);
+  }
+
+  .page-numbers.prev {
+    text-align: left;
+  }
+
+  .page-numbers.next {
+    text-align: right;
+  }
+}

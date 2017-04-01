@@ -1,0 +1,95 @@
+/**
+ * Normalizer - Normalizer Custom
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+html {
+  background: color(bg-light);
+}
+
+
+/**
+ * Box Sizing
+ *
+ * Read more: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input[type="search"],
+hr {
+  box-sizing: border-box;
+}
+
+
+/**
+ * Clearfix
+ *
+ * Forces elements to self-clear floated children.
+ * https://css-tricks.com/snippets/css/clear-fix/
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/**
+ * Remove iOS Rounding/Form Effects
+ */
+
+textarea,
+input[type="search"],
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+/**
+ * Flex-Box Sticky Footer
+ *
+ * @since: 1.0.0
+ */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Any one of the three selectors below is required for this to work. */
+main, 
+[role="main"],
+.main {
+  flex: 1;
+}

@@ -1,0 +1,14 @@
+///
+// Rancho Functions - Auto Inverse Color
+//
+// @group Functions
+// @since 1.0.0-alpha.1
+///
+
+@function auto-inverse($bg-color, $default-font-color: $color-font) {
+  @if (lightness($bg-color) > 50) {
+    @return $default-font-color;
+  } @else {
+    @return $color-font-inverse;
+  }
+}

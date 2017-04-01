@@ -1,0 +1,166 @@
+/**
+ * Cards
+ *
+ * Cards are content boxes with a border and some padding to make them
+ * stand out from the surrounding content. Use cards for alerts, asides
+ * forms or anything that should appear visually separate from the
+ * surrounding content.
+ *
+ * Cards have no set width or font styles, so use container and font
+ * utility classes to expand them as needed.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.card {
+  background: $color-bg-card;
+  margin-bottom: $spacer-card-y;
+  overflow: hidden;
+  @include has-border-card();
+  @include has-border-radius-card();
+  @include has-box-shadow-card();
+}
+
+.card__header,
+.card__footer {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding: $spacer-card-xy;
+}
+
+.card__header {
+  background: $color-bg-card-header;
+}
+
+.card__footer {
+  background: $color-bg-card-footer;
+  border-top: $border-card;
+}
+
+.card__content {
+  padding: $spacer-card-xy;
+}
+
+/**
+ * Remove top margin for menus directly following a card header.
+ * Removes awkward spacing that may appear between the header text
+ * and menu. Only applies to the first menu.
+ */
+.card__header + .menu:first-of-type {
+  margin-top: 0;
+}
+
+
+/**
+ * Cards - Notice Cards
+ *
+ * Notice cards are ideal for notices and other alerts that need attention.
+ * Alert cards have a left-side border to stand out when scanning a page.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.card--notice {
+  border-left: $border-card;
+  border-width: $border-width-u3;
+  border-radius: $border-radius-card;
+  display: flex;
+}
+
+.card--notice .card__content {
+  flex: 1 1 auto;
+}
+
+.card--notice .card__header {
+  background: $color-border-card;
+  border-right: $border-card;
+  border-width: $border-width-u3;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card--notice .card__footer {
+  border: none;
+  display: block;
+  padding: spacer(x, d1); /* XY */
+}
+
+.card--reverse {
+  flex-direction: row-reverse;
+  border-left: none;
+  border-right: $border-card;
+}
+
+.card--reverse .card__header  {
+  border-left: $border-card;
+  border-right: none;
+}
+
+
+/**
+ * Cards - Card State Danger
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.card--danger {
+  border-color: color(danger);
+}
+
+.card--danger .card__header {
+  background: color(danger);
+  border-color: color(danger);
+  color: color(white);
+}
+
+
+/**
+ * Cards - Card State Info
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.card--info {
+  border-color: color(info);
+}
+
+.card--info .card__header {
+  background: color(info);
+  border-color: color(info);
+  color: color(white);
+}
+
+
+/**
+ * Cards - Card State Success
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.card--success {
+  border-color: color(success);
+}
+
+.card--success .card__header {
+  background: color(success);
+  border-color: color(success);
+  color: color(white);
+}
+
+
+/**
+ * Cards - Card State Warning
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.card--warning {
+  border-color: color(warning);
+}
+
+.card--warning .card__header {
+  background: color(warning);
+  border-color: color(warning);
+  color: color(white);
+}

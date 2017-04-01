@@ -1,0 +1,25 @@
+/**
+ * Progress Bars
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.progress {
+  background: color(gray-lighter);
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-inset;
+  margin-bottom: spacer(y);
+  overflow: hidden;
+  width: 100%;
+}
+
+.progress:last-child {
+  margin-bottom: 0;
+}
+
+.progress-bar {
+  background: color(info);
+  height: spacer(y);
+  width: 0%;
+}

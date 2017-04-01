@@ -1,0 +1,114 @@
+/**
+ * Elements - Links
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+a:link,
+a:visited {
+  color: $color-link;
+  text-decoration: $text-decoration-link;
+}
+
+a:hover {
+  color: $color-link-hov;
+  text-decoration: $text-decoration-link-hov;
+}
+
+a:focus {
+  color: $color-link-foc;
+  text-decoration: $text-decoration-link-foc;
+}
+
+a:active {
+  color: $color-link-act;
+  text-decoration: $text-decoration-link-act;
+}
+
+
+/**
+ * Elements - Links - Links Inverse
+ *
+ * This link variation is meant for placement above dark backgrounds.
+ */
+
+.link--inverse,
+.link--inverse:link,
+.link--inverse:visited {
+  color: $color-link-inverse;
+}
+
+.link--inverse:hover {
+  color: $color-link-hov-inverse;
+}
+
+.link--inverse:active {
+  color: $color-link-act-inverse;
+}
+
+
+/**
+ * Elements - Links - Stealth Links
+ *
+ * This resembles the surrounding copy unless hovered and can be used over
+ * light backgrounds when you want your links to go stealth.
+ *
+ * Use .stealth-link--inverse when your background is dark (see below).
+ */
+
+.link--stealth,
+.link--stealth:link,
+.link--stealth:visited {
+  color: $color-font;
+}
+
+.link--stealth:hover {
+  color: $color-link;
+}
+
+.link--stealth:active {
+  color: $color-link-act;
+}
+
+
+/**
+ * Elements - Links - Stealth Links Inverse
+ *
+ * This resembles the surrounding copy unless hovered and can be used over
+ * dark backgrounds when you want your links to go stealth.
+ *
+ * Use .link--stealth when your background is light (see above).
+ */
+
+.stealth-link--inverse,
+.stealth-link--inverse:link,
+.stealth-link--inverse:visited {
+  color: color(white);
+}
+
+.stealth-link--inverse:hover {
+  color: $color-link-inverse;
+}
+
+.stealth-link--inverse:active {
+  color: $color-link-act-inverse;
+}
+
+
+/**
+ * Elements - Links - Text-Decoration Alternative
+ *
+ * This replaces the text-decoration property by adding a border to the bottom
+ * of paragraph link elements. It looks neater than text-decoration, which
+ * can sometimes intersect font descenders.
+ */
+
+p a {
+  border-bottom: 1px solid;
+}
+
+/* Hide borders on the following paragraphs. */
+p.brand-logo-text a,
+p.pagination-menu a {
+  border: none;
+}

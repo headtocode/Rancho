@@ -1,0 +1,24 @@
+///
+// Rancho Config - Tables
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Table Border
+$table-border: 2px solid $color-border;
+
+// Table Padding
+$table-cell-padding: spacer(x, d1); /* XY */
+
+// Table Background
+$table-bg: color(white);
+
+// Table Background Accent
+$table-bg-accent: #f4f6f7;
+
+// Table Head Background
+$tablehead-bg: color(brand);
+
+// Table Head Font Color
+$tablehead-font-color: color(white);

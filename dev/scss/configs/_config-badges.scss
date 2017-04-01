@@ -1,0 +1,42 @@
+///
+// Rancho Config - Components - Badges
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+
+///
+// Shared Badge Variables
+//
+// @since 1.0.0-alpha.1
+///
+
+// Background Color
+$color-bg-badge: color(gray);
+
+// Border Radius
+$has-border-radius-badge: 'true' !default;
+$border-radius-badge: $border-radius !default;
+
+// Font Color
+$color-font-badge: $color-font-inverse;
+
+// Font Weight
+$font-weight-badge: $font-weight-bold;
+
+// Padding
+$spacer-x-badge: spacer(x, d2);
+
+
+///
+// Badge Mixins
+//
+// @since 1.0.0-alpha.1
+///
+
+@mixin has-border-radius-badge() {
+  @if $has-border-radius-badge == 'true' {
+    border-radius: $border-radius-badge;
+  }
+}

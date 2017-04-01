@@ -1,0 +1,36 @@
+/**
+ * Menus - Inline Menu
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu--inline {
+  margin: 0;
+}
+
+.menu--inline li {
+  display: inline-block;
+  margin: 0 .25em;
+}
+
+.menu--inline a {
+  padding: spacer(y, d1) 0;
+}
+
+.menu--inline li:first-of-type {
+  margin-left: 0;
+}
+
+.menu--inline li:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (min-width: $media-query-width-md) {
+  .menu--inline li {
+    margin: 0 .5em;
+  }
+
+  .menu--inline a {
+    padding: 0;
+  }
+}

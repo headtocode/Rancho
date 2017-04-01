@@ -1,0 +1,25 @@
+/**
+ * Menus - Menus Small
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu--small li ul {
+  padding-left: 0;
+}
+
+.menu--small li {
+  margin: 0;
+}
+
+.menu--small li ul {
+  border-top: none;
+  margin: 0;
+}
+
+.menu--small a {
+  display: inline-block;
+  font-weight: $font-weight-normal;
+  padding-top: spacer(y, d2);
+  padding-bottom: spacer(y, d2);
+}

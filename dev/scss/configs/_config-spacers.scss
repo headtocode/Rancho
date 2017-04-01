@@ -1,0 +1,122 @@
+///
+// Rancho Config - Spacers
+//
+// @since 1.0.0-alpha.1
+///
+
+
+///
+// Rancho Config - Spacers - Spacer Scale
+//
+// The spacer() function generates a scale for spacers used by margins and
+// paddings. It takes a root number, $spacer-root, and creates a six-level
+// multiplication table based on it, not counting the root.
+//
+// The spacer() function also creates a series of three decreasing spacer
+// values by dividing the root number and each result in half.
+//
+// Example:, a root of 16 will produce the following scale:
+//
+// Increase:
+// 16, 32, 48, 64, 80, 96, 112
+//
+// Decrease:
+// 8, 4, 2
+//
+// @since 1.0.0-alpha.1
+///
+
+$spacer-root: 16;
+
+@function make-spacer($factor) {
+  $spacer: 1;
+  @if $factor > 0 {
+      $spacer: $spacer * $factor;
+  } @else if $factor < 0 {
+    @for $i from 1 through -$factor {
+      $spacer: $spacer / 2;
+    }
+  }
+  $spacer: round($spacer*$spacer-root);
+  @if $spacer < 1 {
+    $spacer: 1;
+  }
+  @return $spacer;
+}
+
+
+///
+// Rancho Config - Spacers - Spacer Map
+//
+// @since 1.0.0-alpha.1
+///
+
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  null: (
+    x: #{make-spacer(1)}px, // Multiplying base value by 1
+    y: #{make-spacer(1)}px
+  ),
+  u1: (
+    x: #{make-spacer(2)}px, // Multiplying base value by 2 for first step up
+    y: #{make-spacer(2)}px
+  ),
+  u2: (
+    x: #{make-spacer(3)}px, // Multiplying base value by 3 for next step up
+    y: #{make-spacer(3)}px
+  ),
+  u3: (
+    x: #{make-spacer(4)}px, // Multiplying base value by 4, etc...
+    y: #{make-spacer(4)}px
+  ),
+  u4: (
+    x: #{make-spacer(5)}px,
+    y: #{make-spacer(5)}px
+  ),
+  u5: (
+    x: #{make-spacer(6)}px,
+    y: #{make-spacer(6)}px
+  ),
+  u6: (
+    x: #{make-spacer(7)}px,
+    y: #{make-spacer(7)}px
+  ),
+  d1: (
+    x: #{make-spacer(-1)}px,
+    y: #{make-spacer(-1)}px
+  ),
+  d2: (
+    x: #{make-spacer(-2)}px,
+    y: #{make-spacer(-2)}px
+  ),
+  d3: (
+    x: #{make-spacer(-3)}px,
+    y: #{make-spacer(-3)}px
+  ),
+  1px: (
+    x: 1px,
+    y: 1px
+  )
+) !default;
+
+
+///
+// Rancho Config - Spacers - Get Spacer Function
+//
+// Returns spacer and X or Y value.
+//
+// @example spacer(y, u3)
+// @example spacer(x)
+// @since 1.0.0-alpha.1
+///
+
+@function spacer($axis, $size: null) {
+  @return map-get(map-get($spacers, $size), $axis);
+}
+
+@function spacer-level($spacer-name, $spacer-axis: x) {
+  @return map-get(map-get($spacers, #{$spacer-name}), x);
+}

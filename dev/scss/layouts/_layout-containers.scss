@@ -1,0 +1,24 @@
+/**
+ * Layout - Containers
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $width-container;
+}
+
+.container-medium {
+  margin: 0 auto;
+  max-width: $width-container-d1;
+}
+
+.container-small {
+  margin: 0 auto;
+  max-width: $width-container-d2;
+}

@@ -1,0 +1,97 @@
+/**
+ * Components - Menus
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* Menu container, typically an unordered list. */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* The menu item container, typically a list item. */
+.menu-item {
+  margin: 0;
+}
+
+
+/**
+ * Components - Menus - Menu Links
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu-link {
+  flex: 1;
+  display: flex;
+    align-items: center;
+  font-weight: $font-weight-menu;
+  padding: $spacer-y-menu-link $spacer-x-menu-link;
+}
+
+/* Defaults */
+.menu-link:link {
+  @include has-color-bg-menu-link('link');
+  color: $color-link-menu;
+}
+
+.menu-link:visited {
+  @include has-color-bg-menu-link('vis');
+  color: $color-link-menu-vis;
+}
+
+.menu-link:hover {
+  @include has-color-bg-menu-link('hov');
+  color: $color-link-menu-hov;
+}
+
+.menu-link:focus {
+  @include has-color-bg-menu-link('foc');
+  color: $color-link-menu-foc;
+}
+
+.menu-link:active {
+  @include has-color-bg-menu-link('act');
+  color: $color-link-menu-act;
+}
+
+/* Inverse */
+.inverse .menu-link:link {
+  color: $color-link-menu-inverse;
+}
+
+.inverse.menu-link:visited {
+  color: $color-link-menu-vis-inverse;
+}
+
+.inverse.menu-link:hover {
+  color: $color-link-menu-hov-inverse;
+}
+
+.inverse.menu-link:focus {
+  color: $color-link-menu-foc-inverse;
+}
+
+.inverse.menu-link:active {
+  color: $color-link-menu-act-inverse;
+}
+
+
+/**
+ * Menus - Menu Modifications
+ *
+ * Styles for modified menus and their decendants.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu-has-borders .menu-item:not(:first-of-type) {
+  @include has-border-menu();
+}
+
+.menu--padded .menu-link {
+  padding-right: spacer(x);
+  padding-left: spacer(x);
+}

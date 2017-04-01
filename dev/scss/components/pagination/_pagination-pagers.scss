@@ -1,0 +1,32 @@
+/**
+ * Pagination - Pagers
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.pager--next,
+.pager--previous {
+  flex: 1;
+}
+
+.pager--next {
+  text-align: right;
+}
+
+.pager--previous {
+  text-align: left;
+}
+
+.pager--next a,
+.pager--previous a {
+  display: block;
+  flex: 1;
+  padding: spacer(y, u1) spacer(x, d2);
+}
+
+@media screen and (min-width: $media-query-width-md) {
+  .pager--next a,
+  .pager--previous a {
+    padding: spacer(y, u1) spacer(x);
+  }
+}

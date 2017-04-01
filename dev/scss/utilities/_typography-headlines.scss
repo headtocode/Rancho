@@ -1,0 +1,37 @@
+/**
+ * Typography - Headlines
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.headline {
+  color: $font-color-headlines;
+  display: block;
+  font-weight: $font-weight-headlines;
+  line-height: $line-height-headings;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.headline--lite {
+  font-weight: $font-weight-normal;
+}
+
+.headline--sub {
+  font-weight: normal;
+  font-size: $font-size;
+  font-style: italic;
+  padding-top: spacer(y, d3);
+  padding-bottom: spacer(y, d3);
+}
+
+.headline--border {
+  border-bottom: $border;
+  margin-bottom: 1em;
+  padding-top: spacer(y, d1);
+  padding-bottom: spacer(y);
+}
+
+.headline a {
+  border-bottom: none;
+}

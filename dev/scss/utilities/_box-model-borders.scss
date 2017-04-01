@@ -1,0 +1,79 @@
+/**
+ * Utilities - Borders
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.ba {
+  border: $border;
+}
+
+.by {
+  border-top: $border;
+  border-bottom: $border;
+}
+
+.bx {
+  border-left: $border;
+  border-right: $border;
+}
+
+.bt {
+  border-top: $border;
+}
+
+.br {
+  border-right: $border;
+}
+
+.bb {
+  border-bottom: $border;
+}
+
+.bl {
+  border-left: $border;
+}
+
+
+/**
+ * Utilities - Borders - Border Colors
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Selector, Property, Map
+@include repeater-palette('.bc', 'border-color', $palette);
+
+
+/**
+ * Utilities - Borders - Border Colors
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+$_suffix-value: (
+  null: 1px,
+  u1: #{spacer-level(u1)},
+  u2: #{spacer-level(u2)},
+  u3: #{spacer-level(u3)},
+  u4: #{spacer-level(u4)},
+  u5: #{spacer-level(u5)},
+  u6: #{spacer-level(u6)},
+  d1: #{spacer-level(d1)},
+  d2: #{spacer-level(d2)},
+  d3: #{spacer-level(d3)}
+);
+
+// Selector, Property, Map
+@include repeater('.bw', 'border-width', $_suffix-value);
+
+
+/**
+ * Utilities - Borders - Border Radius
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.bdr-radius-disk {
+  border-radius: 50%;
+}

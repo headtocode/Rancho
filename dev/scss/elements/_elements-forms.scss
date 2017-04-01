@@ -1,0 +1,100 @@
+/**
+ * Elements - Forms
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0 0 spacer(y, u2);
+}
+
+legend {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-headings;
+  line-height: $line-height-headings;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: $font-weight-input-legend;
+  width: 100%;
+}
+
+label {
+  font-weight: $font-weight-input-label;
+  line-height: $line-height-input-label;
+  margin-bottom: $spacer-bottom-input-label;
+  vertical-align: middle;
+}
+
+label + p,
+legend + p {
+  margin-top: 0 !important; /* I hate this... */
+}
+
+
+/**
+ * Elements - Forms - Inputs
+ */
+
+input,
+select,
+textarea {
+  background: $color-input-bg;
+  border: $border-input;
+  @if $has-border-radius-input == 'true' {
+    border-radius: $border-radius-input;;
+  }
+  box-shadow: $box-shadow-inset;
+  display: inline-block;
+  font-size: $font-size-rem;
+  margin-bottom: spacer(y);
+  padding: spacer(x, d1); /* XY */
+  width: 100%;
+}
+
+input:last-of-type,
+select:last-of-type,
+textarea:last-of-type {
+  margin: 0;
+}
+
+select {
+  padding: 7px 8px;
+}
+
+option {
+  line-height: 1;
+}
+
+input:focus,
+textarea:focus {
+  border: $border-input-foc;
+  outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+select {
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  vertical-align: middle;
+  width: auto;
+}
+
+input[type="submit"] {
+  margin-bottom: auto;
+  width: auto;
+}
+
+input[type="file"] {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  width: auto;
+}
+
+textarea {
+  min-height: 10em;
+}

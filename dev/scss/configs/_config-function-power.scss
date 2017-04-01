@@ -1,0 +1,26 @@
+///
+// Rancho Config - Functions - Power
+//
+// Creates a function to generate a number based on the mathmatical
+// power of an input value.
+//
+// https://css-tricks.com/snippets/sass/power-function/
+//
+// @since 1.0.0-alpha.1
+///
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}

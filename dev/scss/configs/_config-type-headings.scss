@@ -1,0 +1,27 @@
+///
+// Rancho Config - Headings
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+
+//  Headings Font Family
+$font-family-headings: $font-family-sans;
+
+//  Headings Font Sizes
+$font-size-h1: #{ms(6)}em !default;
+$font-size-h2: #{ms(5)}em !default;
+$font-size-h3: #{ms(4)}em !default;
+$font-size-h4: #{ms(3)}em !default;
+$font-size-h5: #{ms(2)}em !default;
+$font-size-h6: #{ms(1)}em !default;
+
+//  Headings Font Weights
+$font-weight-headings: $font-weight-bold;
+
+//  Headings Line Heights
+$line-height-headings: 1.3;
+
+// Headings Font Color
+$font-color-headings: inherit;

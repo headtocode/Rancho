@@ -1,0 +1,95 @@
+///
+// Rancho Config - Borders
+//
+// @group Config Box Model
+// @since 1.0.0-alpha.1
+///
+
+
+//
+// Config - Borders - Border Colors
+//
+
+// Border Colors (Base)
+$color-border: color(gray-lighter) !default;
+$color-border-vis: $color-border;
+$color-border-hov: color(gray-lighter, hover) !default;
+$color-border-foc: $color-border-hov !default;
+$color-border-act: color(gray-lighter, active) !default;
+
+// Border Colors (Alt)
+$color-border-alt: color(gray-dark) !default;
+$color-border-alt-vis: $color-border-alt;
+$color-border-alt-hov: darken($color-border-alt, 5%) !default;
+$color-border-alt-foc: $color-border-alt-hov !default;
+$color-border-alt-act: darken($color-border-alt, 10%) !default;
+
+//
+// Config - Borders
+//
+
+// Config - Borders - Border Sizes
+$border-width: 1px !default;
+$border-width-u1: 2px !default;
+$border-width-u2: 4px !default;
+$border-width-u3: 8px !default;
+
+// Config - Borders - Border Styles
+$border-style: solid;
+
+// Config - Borders - Border Radius
+$has-border-radius: 'true' !default;
+$border-radius: 4px !default;
+$border-radius-u1: 8px !default;
+$border-radius-d1: 2px !default;
+
+// Border Base
+$border: $border-width $border-style $color-border !default;
+$border-vis: $border !default;
+$border-hov: $border-width $border-style $color-border-hov !default;
+$border-foc: $border-hov !default;
+$border-act: $border-width $border-style $color-border-act !default;
+
+// Border Alt
+$border-alt: $border-width $border-style $color-border-alt !default;
+$border-alt-vis: $border-alt !default;
+$border-alt-hov: $border-width $border-style $color-border-alt-hov !default;
+$border-alt-foc: $border-alt-hov !default;
+$border-alt-act: $border-width $border-style $color-border-alt-act !default;
+
+// Border Brand
+$border-brand: $border-width-u1 $border-style color(brand) !default;
+$border-brand-vis: $border-brand !default;
+$border-brand-hov:$border-width-u1 $border-style color(brand, hover) !default;
+$border-brand-foc: $border-brand !default;
+$border-brand-act: $border-width-u1 $border-style color(brand, active) !default;
+
+// Border States
+
+// Border States (Danger)
+$border-danger: $border-width $border-style color(danger) !default;
+$border-danger-vis: $border-width $border-style color(danger, visited) !default;
+$border-danger-hov: $border-width $border-style color(danger, hover) !default;
+$border-danger-foc: $border-width $border-style color(danger, focus) !default;
+$border-danger-act: $border-width $border-style color(danger, active) !default;
+
+// Border States (Info)
+$border-info: $border-width $border-style color(info) !default;
+$border-info-vis: $border-width $border-style color(info, visited) !default;
+$border-info-hov: $border-width $border-style color(info, hover) !default;
+$border-info-foc: $border-width $border-style color(info, focus) !default;
+$border-info-act: $border-width $border-style color(info, active) !default;
+
+// Border States (Success)
+$border-success: $border-width $border-style color(success) !default;
+$border-success-vis: $border-width $border-style color(success, visited) !default;
+$border-success-hov: $border-width $border-style color(success, hover) !default;
+$border-success-foc: $border-width $border-style color(success, focus) !default;
+$border-success-act: $border-width $border-style color(success, active) !default;
+
+// Border States (Warning)
+$border-warning: $border-width $border-style color(warning) !default;
+$border-warning-vis: $border-width $border-style color(warning, visited) !default;
+$border-warning-hov: $border-width $border-style color(warning, hover) !default;
+$border-warning-foc: $border-width $border-style color(warning, focus) !default;
+$border-warning-act: $border-width $border-style color(warning, active) !default;

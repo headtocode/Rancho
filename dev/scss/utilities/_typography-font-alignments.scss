@@ -1,0 +1,23 @@
+/**
+ * Typography - Text Align
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  left: left,
+  center: center,
+  right: right
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.text', 'text-align', $_suffix-value);
+
+///
+// Example:
+//
+// .text-center-md {
+//   text-align: center;
+// }
+///

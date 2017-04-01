@@ -1,0 +1,45 @@
+/**
+ * Buttons
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn,
+a.btn {
+  background: $color-bg-btn;
+  border: $border-btn;
+  color: $color-font-btn;
+  cursor: pointer;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  font-family: $font-family-btn;
+  font-weight: $font-weight-btn;
+  padding: $spacer-btn-y $spacer-btn-x;
+  text-decoration: none;
+  vertical-align: middle;
+  @include has-border-radius-btn();
+  @include has-box-shadow-btn();
+}
+
+.btn:focus {
+  background: $color-bg-btn-foc;
+  border-color: $color-border-btn-foc;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: $color-bg-btn-hov;
+  border-color: $color-border-btn-hov;
+  color: $color-font-btn-hov;
+  text-decoration: none;
+}
+
+.btn:active {
+  background: $color-bg-btn-act;
+  border-color: $color-border-btn-act;
+  color: $color-font-btn-act;
+  text-decoration: none;
+  @include has-box-shadow-inset-btn();
+}

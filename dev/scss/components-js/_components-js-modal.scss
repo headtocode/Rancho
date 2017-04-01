@@ -1,0 +1,169 @@
+/**
+ * JS Component - Accessible Modal Modal
+ *
+ * https://github.com/scottaohara/accessible_modal_window
+ *
+ * MIT License
+ *
+ * Copyright (c) 2016 Scott O'Hara
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.modal-is-open,
+.modal-is-open body {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.js .a11y-modal {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 100%;
+  opacity: 0;
+  overflow: auto;
+  padding: spacer(x); /* XY */
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  transition: opacity .2s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+}
+
+.js .a11y-modal[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+}
+
+.js .a11y-modal[aria-hidden="false"] .modal {
+  transform: scale(1) translateY(0px);
+}
+
+.modal {
+  background: color(white);
+  border: $border;
+  border-radius: $border-radius;
+  margin: spacer(y) auto;
+  max-height: 90%;
+  max-width: $width-container-d1;
+  min-width: 240px;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: spacer(x); /* XY */
+  position: relative;
+  transition: transform .3s ease-in-out;
+  width: 100%;
+}
+
+.modal:focus {
+  outline: none;
+}
+
+.modal--sm {
+  max-width: $width-container-d2;
+}
+
+.modal--full-width {
+  max-width: 100%;
+}
+
+.modal--take-over {
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.modal--content-scroll .modal__content {
+  border: 1px solid #ccc;
+  height: 240px;
+  overflow: auto;
+  padding: spacer(x, d1); /* XY */
+  transition: height .2s ease-in-out;
+}
+
+@media screen and (min-height: 640px) {
+  .modal--content-scroll .modal__content {
+    height: 480px;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .modal--content-scroll .modal__content {
+    height: 500px;
+  }
+}
+
+@media screen and (min-height: 800) {
+  .modal--content-scroll .modal__content {
+    height: 640px;
+  }
+}
+
+@media screen and (min-height: 1200) {
+  .modal--content-scroll .modal__content {
+    height: 720px;
+  }
+}
+
+.modal__intro {
+  margin-bottom: spacer(y);
+  padding-right: 32px;
+}
+
+.modal__intro__title {
+  font-size: $font-size-u2;
+  margin-top: 0;
+}
+
+.modal__intro> :not(.modal__intro__title) {
+  font-size: $font-size;
+}
+
+.modal__outro {
+  margin-top: spacer(y);
+}
+
+.a11y-modal .js-btn-close {
+  position: absolute;
+    top: spacer(y);
+    right: spacer(x);
+}
+
+.js .modal {
+  box-shadow: $box-shadow-u4;
+  margin: auto;
+  transform: scale(0.8) translateY(-30px);
+}
+
+.no-js .no-js-hide,
+.no-js button[data-action='modal-open'],
+.no-js .js-btn-close {
+  display: none;
+}
+
+.no-js .no-js-hide:target {
+  display: block;
+}

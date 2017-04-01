@@ -1,0 +1,37 @@
+/**
+ * Branding - Logo
+ *
+ * Styles for graphic and text based logos.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+
+/**
+ * Graphic Logos
+ */
+
+.brand-logo {
+  height: auto;
+  max-width: 180px;
+  padding: spacer(y, d1) 0;
+}
+
+@media screen and (min-width: $media-query-width-md) {
+  .brand-logo-md {
+    height: auto;
+    max-width: 240px;
+  }
+}
+
+
+/**
+ * Text Logos
+ */
+
+.brand-logo-text {
+  font-size: $font-size-titles-logo;
+  font-weight: $font-weight-headlines-logo;
+  line-height: $line-height-headings;
+  margin: 0;
+}

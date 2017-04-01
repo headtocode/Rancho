@@ -1,0 +1,97 @@
+/**
+ * JS Component - Accessible Accordions
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/**
+ * JS Component - Accessible Accordions - Header
+ *
+ * The accordion header is converted into a button by the accordions script,
+ * so we need to overwrite some of the default button styles.
+ */
+
+.js-accordion__header {
+  //box-shadow: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+/* Aria is added by the script; these won't affect the JS free header. */
+.js-accordion__header[aria-expanded="true"]:before {
+  content: "- ";
+}
+
+.js-accordion__header[aria-expanded="false"]:before {
+  content: "+ ";
+}
+
+
+/**
+ * JS Component - Accessible Accordions - Panel
+ */
+
+.js-accordion__panel {
+  padding: spacer(y) 0 spacer(y, u1);
+}
+
+.js-accordion__panel[aria-hidden=true] {
+  display: none;
+}
+
+.js-accordion__panel:last-of-type {
+  border-bottom: $border-brand;
+  margin-bottom: spacer(y, u2);
+}
+
+
+/**
+ * JS Component - Accessible Accordions - Info
+ */
+
+/* Subdued */
+.js-accordion--subdued__header {
+  @extend .btn;
+  @extend .btn--subdued;
+}
+
+.js-accordion--subdued__panel:last-of-type {
+  border-bottom: $border;
+}
+
+/* Danger */
+.js-accordion--danger__header {
+  @extend .btn--danger;
+}
+
+.js-accordion--danger__panel:last-of-type {
+  border-bottom: $border-danger;
+}
+
+/* Info */
+.js-accordion--info__header {
+  @extend .btn--info;
+}
+
+.js-accordion--info__panel:last-of-type {
+  border-bottom: $border-info;
+}
+
+/* Success */
+.js-accordion--success__header {
+  @extend .btn--success;
+}
+
+.js-accordion--success__panel:last-of-type {
+  border-bottom: $border-success;
+}
+
+/* Warning */
+.js-accordion--warning__header {
+  @extend .btn--warning;
+}
+
+.js-accordion--warning__panel:last-of-type {
+  border-bottom: $border-warning;
+}

@@ -1,0 +1,59 @@
+/**
+ * Elements - Tables
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+table {
+  border: $table-border;
+  font-family: $font-family-sans;
+  margin-bottom: spacer(y);
+  text-align: left;
+  width: 100%;
+}
+
+thead {
+  background: $tablehead-bg;
+  color: $tablehead-font-color;
+}
+
+table caption {
+  font-size: $font-size-u1;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: 0 0 spacer(y, d1);
+  text-align: left;
+}
+
+tr {
+  border-bottom: $table-border;
+  vertical-align: top;
+}
+
+td, th {
+  padding: spacer(x, d1); /* XY */
+}
+
+td, th {
+  border-right: $table-border;
+  border-left: $table-border;
+}
+
+thead th {
+  border: none;
+}
+
+tfoot {
+  border-top: $table-border;
+  padding: spacer(y, d1) 0;
+}
+
+tbody .odd,
+tbody tr:nth-child(odd) {
+  background: $table-bg;
+}
+
+tbody .even,
+tbody tr:nth-child(even) {
+  background: $table-bg-accent;
+}

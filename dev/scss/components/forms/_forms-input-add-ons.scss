@@ -1,0 +1,63 @@
+/**
+ * Forms - Form Input Add-Ons
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.input-add-on {
+  display: flex;
+  margin-bottom: spacer(y);
+}
+
+.input-add-on:last-of-type {
+  margin: 0;
+}
+
+.input-add-on__field {
+  flex: 1;
+  box-shadow: $box-shadow-inset;
+}
+
+.input-add-on__field,
+.input-add-on__item {
+  border-radius: 0;
+  margin: 0 !important;
+}
+
+.input-add-on__field:first-child,
+.input-add-on__item:first-child {
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+.input-add-on__field:last-child,
+.input-add-on__item:last-child {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.input-add-on__item,
+input[type="submit"].input-add-on__item,
+button.input-add-on__item {
+  display: flex;
+    align-items: center;
+  color: $color-font;
+  background: $color-border;
+  border-color: $color-border;
+  box-shadow: none;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: 0 spacer(x, d1);
+}
+
+.input-add-on__item.in-focus {
+  background: $color-bg-btn;
+  border-color: $color-bg-btn;
+  color: color(white);
+}
+
+.input-add-on__item:focus {
+  background: $color-bg-btn-act;
+  border-color: $color-bg-btn-foc;
+  color: color(white);
+}

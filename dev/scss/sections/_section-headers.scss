@@ -1,0 +1,48 @@
+/**
+ * Layout Sections - Masthead
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.masthead {
+  background: $color-bg-masthead;
+  border-bottom: $border-masthead;
+  color: $color-font-masthead;
+}
+
+.masthead .dropdown-toggle,
+.masthead .dropdown-toggle--sub,
+.masthead a:link,
+.masthead a:visited {
+  color: $color-link-navbar;
+}
+
+.masthead .dropdown-toggle:hover,
+.masthead .dropdown-toggle:focus,
+.masthead a:hover {
+  color: $color-link-navbar-hov;
+}
+
+.masthead .dropdown-toggle:active,
+.masthead a:active {
+  color: $color-link-navbar-act;
+}
+
+
+/**
+ * Layout Sections - Masthead - Menus
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu--masthead {
+  border-top: $border-menu;
+  margin-top: 0;
+}
+
+@media screen and (min-width: $media-query-width-md) {
+  .menu--masthead {
+    border: none;
+    padding: 0;
+  }
+}

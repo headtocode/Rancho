@@ -1,0 +1,35 @@
+/**
+ * Typography - Font Sizes - REM
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  null: $font-size-rem,
+  u1: $font-size-rem-u1,
+  u2: $font-size-rem-u2,
+  u3: $font-size-rem-u3,
+  u4: $font-size-rem-u4,
+  u5: $font-size-rem-u5,
+  u6: $font-size-rem-u6,
+  d1: $font-size-rem-d1,
+  d2: $font-size-rem-d2,
+  d3: $font-size-rem-d3,
+  d4: $font-size-rem-d4,
+  d5: $font-size-rem-d5,
+  d6: $font-size-rem-d6
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.font-size-rem', 'font-size', $_suffix-value);
+
+///
+// Example:
+//
+// .font-size-rem-u5-md {
+//   font-size: $font-size-rem-u5;
+// }
+///
+
+// Out of Time

@@ -1,0 +1,29 @@
+/**
+ * Flex Box - Flex Wrap
+ *
+ * Responsive utility classes for applying flex Wrap to components.
+ *
+ * Please refer to CSS Trick's excellent guide to Flexbox for detailed
+ * references to any of the properties used below:
+ * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  no: nowrap,
+  null: wrap,
+  reverse: col
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.wrap', 'flex-wrap', $_suffix-value);
+
+///
+// Example:
+//
+// .wrap-reverse-sm  {
+//   flex-wrap: wrap-reverse;
+// }
+///

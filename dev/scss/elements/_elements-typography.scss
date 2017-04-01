@@ -1,0 +1,114 @@
+/**
+ * Elements - Typography
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+
+/**
+ * Elements - Typography - Root
+ */
+
+html {
+  color: $color-font;
+  font-family: $font-family-sans;
+}
+
+
+/**
+ * Elements - Typography - Headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h {
+  color: $font-color-headings;
+  font-weight: $font-weight-headings;
+  line-height: $line-height-headings;
+  margin: 0 0 spacer(y);
+}
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+}
+
+h5,
+.h5 {
+  font-size: $font-size-h5;
+}
+
+h6,
+.h6 {
+  font-size: $font-size-h6;
+}
+
+
+/**
+ * Elements - Typography - Paragraphs
+ */
+
+p {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: 1em 0;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Elements - Typography - Small Print
+ */
+
+small,
+.small {
+  display: inline-block;
+  font-size: $font-size-d1;
+  margin-bottom: 1em;
+}
+
+small:last-child,
+.small:last-child {
+  margin: 0;
+}
+
+
+/**
+ * Elements - Typography - Quotes
+ */
+
+blockquote {
+  font-family: $font-family-serif;
+  font-style: italic;
+  padding: spacer(y, u2) 0;
+  text-align: center;
+}
+
+blockquote p {
+  font-size: 1em;
+}

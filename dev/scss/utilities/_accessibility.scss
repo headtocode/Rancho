@@ -1,0 +1,20 @@
+/**
+ * Accessibility
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+
+/**
+ * Accessibility - Screen Reader Text
+ *
+ * Hides text from sighted users by positioning it ofont-family-screen; text
+ * remains accessible to screen-readers.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.sr-only {
+  position: absolute;
+    left: -10000cm; // 1 kilometer, LOLOL
+}

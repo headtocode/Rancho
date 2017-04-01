@@ -1,0 +1,17 @@
+/**
+ * Components - Badges
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.badge {
+  background: $color-bg-badge;
+  color: $color-font-badge;
+  display: inline-block;
+  font-weight: $font-weight-badge;
+  padding-right: $spacer-x-badge;
+  padding-left: $spacer-x-badge;
+  @include has-border-radius-badge();
+}
+
+@include repeater-palette('.badge-', 'background-color', $palette, true);

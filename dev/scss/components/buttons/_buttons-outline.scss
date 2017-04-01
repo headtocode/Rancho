@@ -1,0 +1,154 @@
+/**
+ * Buttons - Button Outline
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--outline {
+  background: transparent;
+  box-shadow: none;
+  color: $color-link;
+}
+
+.btn--outline:hover {
+  background: color(brand, hover);
+  box-shadow: none;
+  color: color(white);
+}
+
+.btn--outline:focus {
+  background: color(brand, focus);
+  box-shadow: none;
+  color: color(white);
+}
+
+.btn--outline:active {
+  background: color(brand, active);
+  box-shadow: $box-shadow-inset;
+  color: color(white);
+}
+
+
+/**
+ * Buttons - Button Outline - Subdued
+ */
+
+.btn--subdued.btn--outline {
+  border-color: color(gray-light);
+  color: $color-font;
+}
+
+.btn--subdued.btn--outline:hover {
+  background: color(white, hover);
+  border-color: color(gray, hover);
+  color: $color-font;
+}
+
+.btn--subdued.btn--outline:focus {
+  background: color(white, focus);
+  border-color: color(gray, focus);
+  color: $color-font;
+}
+
+.btn--subdued.btn--outline:active {
+  background: color(white, active);
+  border-color: color(gray, active);
+  color: $color-font;
+}
+
+
+
+/**
+ * Buttons - Button Outline - State Info
+ */
+
+.btn--info.btn--outline {
+  color: color(info);
+}
+
+.btn--info.btn--outline:hover {
+  background: color(info, hover);
+  color: color(white);
+}
+
+.btn--info.btn--outline:focus {
+  background: color(info, focus);
+  color: color(white);
+}
+
+.btn--info.btn--outline:active {
+  background: color(info, active);
+  color: color(white);
+}
+
+
+/**
+ * Buttons - Button Outline - State Danger
+ */
+
+.btn--danger.btn--outline {
+  color: color(danger);
+}
+
+.btn--danger.btn--outline:hover {
+  background: color(danger, hover);
+  color: color(white);
+}
+
+.btn--danger.btn--outline:focus {
+  background: color(danger, focus);
+  color: color(white);
+}
+
+.btn--danger.btn--outline:active {
+  background: color(danger, active);
+  color: color(white);
+}
+
+
+/**
+ * Buttons - Button Outline - State Success
+ */
+
+.btn--success.btn--outline {
+  color: color(success);
+}
+
+.btn--success.btn--outline:hover {
+  background: color(success, hover);
+  color: color(white);
+}
+
+.btn--success.btn--outline:focus {
+  background: color(success, focus);
+  color: color(white);
+}
+
+.btn--success.btn--outline:active {
+  background: color(success, active);
+  color: color(white);
+}
+
+
+/**
+ * Buttons - Button Outline - State Warning
+ */
+
+.btn--warning.btn--outline {
+  color: color(warning);
+}
+
+.btn--warning.btn--outline:hover {
+  background: color(warning, hover);
+  color: color(white);
+}
+
+.btn--warning.btn--outline:focus {
+  background: color(warning, focus);
+  color: color(white);
+}
+
+.btn--warning.btn--outline:active {
+  background: color(warning, active);
+  color: color(white);
+}

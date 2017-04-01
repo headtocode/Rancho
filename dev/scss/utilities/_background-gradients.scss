@@ -1,0 +1,10 @@
+/**
+ * Backgrounds - Background Gradients
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.bg-gradient {
+  background: color(bg-light);
+  background: linear-gradient(to bottom, color(bg-light) 0%,#d8d8d8 100%);
+}

@@ -1,0 +1,138 @@
+/**
+ * JS Component - Dropdowns
+ *
+ * Applies styles to dropdowns triggered by buttons or links.
+ * Dropdown menu class .menu-dropdown extends some of the
+ * classes here, and thus is a dependent.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.contaner-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+
+/**
+ * JS Component - Dropdown Menu Toggle
+ *
+ * Toggle link/button for dropdowns. Can be applied to eitehr a
+ * button or anchor, depending on your needs.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* Overwrite LVHA text-decoration for any anchors being used as a toggle. */
+.btn--dropdown-toggle:link,
+.btn--dropdown-toggle:visited,
+.btn--dropdown-toggle:hover,
+.btn--dropdown-toggle:focus,
+.btn--dropdown-toggle:active {
+  text-decoration: none;
+}
+
+
+/**
+ * JS Component - Dropdown Content
+ *
+ * Styles for the dropdown content container.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.dropdown {
+  display: none;
+}
+
+.dropdown.toggled-on { 
+  background: $color-bg-menu-dropdown;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.btn-group .dropdown.toggled-on {
+  position: absolute;
+    top: 110%;
+}
+
+.dropdown.toggled-on { 
+  @include dropdown();
+}
+
+
+/**
+ * JS Component - Dropdowns - Positions
+ *
+ * Dropdowns are anchored to the bottom left of the .contaner-dropdown
+ * class by default. The following position modifiers are used to alter
+ * the placement. Use these to place anywhere along the top, center or
+ * bottom. Useful for right-aligned nav menus where the dropdown may
+ * end up overflowing the viewport.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* Dropdown - Bottom-Center */
+.dropdown-bc.toggled-on {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Dropdown - Bottom-Right */
+.dropdown-br.toggled-on {
+  left: auto;
+  right: 0;
+}
+
+/* Dropdown - Top-Left */
+.dropdown-tl.toggled-on {
+  top: auto;
+  bottom: 110%;
+  left: 0;
+}
+
+/* Dropdown - Top-Center */
+.dropdown-tc.toggled-on {
+  top: auto;
+  bottom: 110%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Dropdown - Top-Right */
+.dropdown-tr.toggled-on {
+  top: auto;
+  right: 0;
+  bottom: 110%;
+  left: auto;
+}
+
+
+/**
+ * JS Component - Dropdowns - Dropdown Icons
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.dropdown-icon {
+  margin-left: auto;
+  padding-left: .5rem;
+}
+
+.dropdown-icon-right {
+  margin-right: auto;
+  padding-right: .5rem;
+}
+
+
+/**
+ * Be Nice to Non-Javascript Browsers
+ */
+
+.no-js .menu-dropdown,
+.no-js .dropdown {
+  display: block;
+}

@@ -1,0 +1,160 @@
+/**
+ * Buttons - Button States
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+
+/**
+ * Buttons - Button States - Danger
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--danger {
+  background: $color-bg-btn-danger;
+  border-color: $color-border-btn-danger;
+  color: $color-font-btn-danger;
+}
+
+.btn--danger:hover {
+  background: $color-bg-btn-danger-hov;
+  border-color: $color-border-btn-danger-hov;
+  color: $color-font-btn-danger;
+}
+
+.btn--danger:focus {
+  background: $color-bg-btn-danger-foc;
+  border-color: $color-border-btn-danger-foc;
+  color: $color-font-btn-danger;
+}
+
+.btn--danger:active {
+  background: $color-bg-btn-danger-act;
+  border-color: $color-border-btn-danger-act;
+  color: $color-font-btn-danger-act;
+}
+
+
+/**
+ * Buttons - Button States - Info
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--info {
+  background: $color-bg-btn-info;
+  border-color: $color-border-btn-info;
+  color: $color-font-btn-info;
+}
+
+.btn--info:hover {
+  background: $color-bg-btn-info-hov;
+  border-color: $color-border-btn-info-hov;
+  color: $color-font-btn-info;
+}
+
+.btn--info:focus {
+  background: $color-bg-btn-info-foc;
+  border-color: $color-border-btn-info-foc;
+  color: $color-font-btn-info-foc;
+}
+
+.btn--info:active {
+  background: $color-bg-btn-info-act;
+  border-color: $color-border-btn-info-act;
+  color: $color-font-btn-info-act;
+}
+
+
+/**
+ * Buttons - Button Subdued
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--subdued {
+  background: $color-bg-btn-subdued;
+  border-color: $color-border-btn-subdued;
+  color: $color-font-btn-subdued;
+}
+
+.btn--subdued:hover {
+  background: color(white, hover);
+  border-color: $color-border-btn-subdued-hov;
+  color: $color-font-btn-subdued-hov;
+}
+
+.btn--subdued:focus {
+  background: color(white, hover);
+  border-color: $color-border-btn-subdued-foc;
+  color: $color-font-btn-subdued-foc;
+}
+
+.btn--subdued:active {
+  background: color(white, active);
+  border-color: $color-border-btn-subdued-act;
+  color: $color-font-btn-subdued-act;
+}
+
+
+/**
+ * Buttons - Button States - Success
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--success {
+  background: $color-bg-btn-success;
+  border-color: $color-border-btn-success;
+  color: $color-font-btn-success;
+}
+
+.btn--success:hover {
+  background: $color-bg-btn-success-hov;
+  border-color: $color-border-btn-success-hov;
+  color: $color-font-btn-success;
+}
+
+.btn--success:focus {
+  background: $color-bg-btn-success-foc;
+  border-color: $color-border-btn-success-foc;
+  color: $color-font-btn-success-foc;
+}
+
+.btn--success:active {
+  background: $color-bg-btn-success-act;
+  border-color: $color-border-btn-success-act;
+  color: $color-font-btn-success-act;
+}
+
+
+/**
+ * Buttons - Button States - Warning
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--warning {
+  background: $color-bg-btn-warning;
+  border-color: $color-border-btn-warning;
+  color: $color-font-btn-warning;
+}
+
+.btn--warning:hover {
+  background: $color-bg-btn-warning-hov;
+  border-color: $color-border-btn-warning-hov;
+  color: $color-font-btn-warning-hov;
+}
+
+.btn--warning:focus {
+  background: $color-bg-btn-warning-foc;
+  border-color: $color-border-btn-warning-foc;
+  color: $color-font-btn-warning-foc;
+}
+
+.btn--warning:active {
+  background: $color-bg-btn-warning-act;
+  border-color: $color-border-btn-warning-act;
+  color: $color-font-btn-warning-act;
+}

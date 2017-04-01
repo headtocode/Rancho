@@ -1,0 +1,84 @@
+/**
+ * JS Component - Dropdowns - Toggle
+ *
+ * Applies styles to dropdown toggle buttons used by nested menues and
+ * their children. These classes are not necessary to trigger a dropdown.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.dropdown-toggle,
+.dropdown-toggle--sub,
+.drop-nav-toggle {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: $color-link;
+  cursor: pointer;
+  margin: 0;
+  padding-left: spacer(x, u1); /* Adds larger touch area on mobile. */
+  text-align: center;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle--sub:hover,
+.drop-nav-toggle:hover {
+  background: transparent;
+  border: none;
+  color: $color-link-hov;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle--sub:focus,
+.drop-nav-toggle:focus {
+  background: none;
+  border: none;
+}
+
+.dropdown-toggle:active,
+.dropdown-toggle--sub:active,
+.drop-nav-toggle:active {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: $color-link-act;
+}
+
+@media screen and (min-width: $media-query-mobile-nav) {
+  .dropdown-toggle,
+  .dropdown-toggle--sub,
+  .drop-nav-toggle {
+    padding-left: .5em;
+    padding-right: 0;
+    position: static;
+  }
+}
+
+
+/**
+ * Menus - Menu Button for Small Screens
+ *
+ * Styles the menu button that toggles the global navigation on or off
+ * on small screens. The script can be found in scripts/main.js (production)
+ * or scripts/menu.js (dev).
+ */
+
+.nav-toggle--off {
+  position: absolute;
+    left: -10000cm;
+}
+
+.no-js .nav-toggle {
+  position: static;
+}
+
+@media screen and (min-width: $media-query-mobile-nav) {
+  .nav-toggle--off {
+    position: static;
+  }
+
+  .btn--nav-toggle {
+    display: none;
+  }
+}

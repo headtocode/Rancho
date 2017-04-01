@@ -1,0 +1,30 @@
+/**
+ * Flex Box - Flex Direction
+ *
+ * Responsive utility classes for applying flex direction to components.
+ *
+ * Please refer to CSS Trick's excellent guide to Flexbox for detailed
+ * references to any of the properties used below:
+ * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  row: row,
+  row-reverse: row-reverse,
+  column: column,
+  column-reverse: column-reverse
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.direction', 'flex-direction', $_suffix-value);
+
+///
+// Example:
+//
+// .direction-row-reverse-md {
+//   flex-direction: row-reverse;
+// }
+///

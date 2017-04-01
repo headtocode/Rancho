@@ -1,0 +1,35 @@
+///
+// Rancho Config - Font Folors
+//
+// @group Config Typography
+// @since 1.0.0-alpha.1
+///
+
+
+// Font Colors
+//
+// These are the default font colors used throughout your design. Unless
+// specified elsewhere, these color your fonts.
+//
+// @since 1.0.0-alpha.1
+
+$color-font: color(gray-darker) !default;
+$color-font-vis: $color-font !default;
+$color-font-hov: color(gray-darker, hover) !default;
+$color-font-foc: $color-font-hov !default;
+$color-font-act: color(gray-darker, active) !default;
+
+
+// Font Colors Inverse
+//
+// Inverse colors are used over dark backgrounds to keep the text legible,
+// for example, you would use $color-font-inverse over a section with a black
+// background, or even red or green, where a darker font might not read well.
+//
+// @since 1.0.0-alpha.1
+
+$color-font-inverse: color(white) !default;
+$color-font-vis-inverse: $color-font-inverse !default;
+$color-font-hov-inverse: color(white, hover) !default;
+$color-font-foc-inverse: $color-font-hov-inverse !default;
+$color-font-act-inverse: color(white, active) !default;

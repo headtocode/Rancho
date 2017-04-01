@@ -1,0 +1,8 @@
+/**
+ * Backgrounds - Colors - Brand
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Selector, Property, Map, Auto Inverse Type
+@include repeater-palette('.bg-color', 'background-color', $palette, true);

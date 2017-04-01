@@ -1,0 +1,71 @@
+///
+// Rancho Config - Links
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+
+///
+// Config - Links - Default
+///
+
+$color-link: color(brand) !default;
+$text-decoration-link: none;
+
+$color-link-vis: $color-link !default;
+$text-decoration-link-vis: none;
+
+$color-link-hov: color(brand, hover) !default;
+$text-decoration-link-hov: none;
+
+$color-link-foc: $color-link-hov !default;
+$text-decoration-link-foc: underline;
+
+$color-link-act: color(brand, active) !default;
+$text-decoration-link-act: none;
+
+
+///
+// Config - Links - Inverse
+//
+// Knockout links are designed for use on dark backgrounds. Please ensure your
+// links have sufficient color contrast. See webaim.org to learn more and to
+// test your colors against Web Content Accessibility Guidelines standards.
+//
+// http://webaim.org/resources/contrastchecker/
+///
+
+$color-link-inverse: color(white) !default;
+$color-link-vis-inverse: $color-link-inverse !default;
+$color-link-hov-inverse: color(white, hover) !default;
+$color-link-foc-inverse: $color-link-hov-inverse !default;
+$color-link-act-inverse: color(white, active) !default;
+
+
+///
+// Config - Links - Default (Stealth)
+//
+// Stealth links blend in with the surrounding copy unless the user hovers
+// over them or they're otherwise in focus.
+///
+
+$color-link-stealth: $color-font !default;
+$color-link-vis-stealth: $color-link-stealth !default;
+$color-link-hov-stealth: $color-link-hov !default;
+$color-link-foc-stealth: $color-link-hov-stealth !default;
+$color-link-act-stealth: $color-link-act !default;
+
+
+///
+// Config - Links - Knockout (Stealth)
+//
+// Stealth links blend in with the surrounding copy unless the user hovers
+// over them or they're otherwise in focus.
+///
+
+$color-link-inverse-stealth: $color-font-inverse !default;
+$color-link-vis-inverse-stealth: $color-link-inverse-stealth !default;
+$color-link-hov-inverse-stealth: $color-link-hov-inverse !default;
+$color-link-foc-inverse-stealth: $color-link-hov-inverse-stealth !default;
+$color-link-act-inverse-stealth: $color-link-act-inverse !default;

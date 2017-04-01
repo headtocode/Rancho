@@ -1,0 +1,69 @@
+/**
+ * Menues - Dropdown Menus
+ *
+ * Styles menus and sub-menus.
+ *
+ * Use .is-flat in cases where you want the
+ * dropdown to behave more like an accordion.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu-dropdown {
+  display: none;
+}
+
+.menu-dropdown.toggled-on,
+.menu-dropdown.toggled-on.is-flat { 
+  background: $color-bg-menu-dropdown;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+  position: static;
+  width: 100%;
+}
+
+/* Remove shadow on nested sub-menus. */
+.menu-dropdown.toggled-on.is-flat {
+  border: none;
+  border-radius: 0;
+}
+
+.menu-dropdown .menu-link {
+  font-weight: $font-weight-menu-nested;
+}
+
+@media screen and (min-width: $media-query-mobile-nav) {
+  .menu-dropdown.toggled-on {
+    padding: $spacer-y-menu-dropdown $spacer-x-menu-dropdown;
+    @include dropdown(240px);
+  }
+}
+
+
+/**
+ * Menues - Dropdown Menus - Has Dropdown
+ *
+ * The .has-dropdown state is applied to menu items that contain a
+ * dropdown toggle as a sibling to the menu link. You'll typically
+ * see this pattern where you have a main link — a parent — and then
+ * a dropdown to reveal the sub-menu, or child items.
+ *
+ * Example, where V is a dropdown toggle and | is its border:
+ * Link | V
+ *
+ * The flex properties ensure the toggle height will always match the
+ * height of the button itself.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.menu-item.has-dropdown {
+  display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.menu-item.has-dropdown > .menu-link {
+  flex: 1 1 auto;
+}

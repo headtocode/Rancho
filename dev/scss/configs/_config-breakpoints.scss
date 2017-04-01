@@ -1,0 +1,31 @@
+///
+// Rancho Config - Media Queries
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Width: Small
+$media-query-width-sm: 480px;
+
+// Width: Medium
+$media-query-width-md: 780px;
+
+// Width: Large
+$media-query-width-lg: 960px;
+
+// Width: Extra Large
+$media-query-width-xl: 1200px;
+
+// Width: Mobile Nav Trigger
+$media-query-mobile-nav: $media-query-width-md;
+
+
+$breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 780px,
+  lg: 960px,
+  xl: 1200px,
+  nv: 780px
+) !default;

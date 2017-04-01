@@ -1,0 +1,25 @@
+/**
+ * Pagination
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* Pagers and Page Numbers both use the Pagination Menu class */
+.pagination-menu {
+  display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  font-weight: $font-weight-bold;
+  margin: 0 auto;
+  max-width: $width-container;
+}
+
+.pagination-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pagination-menu a:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+

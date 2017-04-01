@@ -1,0 +1,83 @@
+/**
+ * JS Component - Accessible Tabs
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.tabs h2:focus,
+.tabs .headline:focus {
+    outline: 0;
+}
+
+
+/**
+ * JS Component - Accessible Tabs - Tabs List
+ */
+
+.tabs__list {
+  border-left: 1px solid color(gray-lighter);
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  list-style: none;
+  margin: spacer(y, u3) 0 0;
+}
+
+.tabs__list-item {
+  border-right: 1px solid color(gray-lighter);
+  flex: 1 1 auto;
+  margin: 0;
+  text-align: center;
+}
+
+.tabs__list-item a {
+  border-bottom: 4px solid color(gray-lighter);
+  color: $color-font;
+  cursor: pointer;
+  display: block;
+  font-weight: $font-weight-bold;
+  padding: spacer(y) spacer(x, u1);
+  overflow: hidden;
+}
+
+.tabs__list-item a:hover,
+.tabs__list-item a:focus {
+  border-color: color(brand);
+}
+
+.tabs__list-item a:active {
+  border-color: color(brand, hover);
+}
+
+.tabs__list-item.current a {
+  border-bottom: 4px solid color(brand);
+  color: $color-link;
+}
+
+.tabs__list-item.current a:hover,
+.tabs__list-item.current a:focus {
+  border-color: color(brand, hover);
+  color: $color-link-hov;
+}
+
+.tabs__list-item.current a:active {
+  border-color: color(brand, active);
+  color: $color-link-act;
+}
+
+
+/**
+ * JS Component - Accessible Tabs - Tabs Panel
+ */
+
+.tabs__panel {
+  border-bottom: 4px solid color(brand);
+  display: block;
+  clear: left;
+  margin-bottom: spacer(y, u2);
+  overflow: auto;
+  padding: spacer(y) 0 spacer(y, u1);
+  position: relative;
+  visibility: visible;
+  z-index: 5;
+}

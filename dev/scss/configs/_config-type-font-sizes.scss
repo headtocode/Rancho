@@ -1,0 +1,47 @@
+///
+// Rancho Config - Font Sizes
+//
+// @since 1.0.0-alpha.1
+///
+
+
+// Font Size Relative
+$font-size: #{ms(0)}em !default;
+
+// Font Size Relative - Size Increases
+$font-size-u1: #{ms(1)}em !default;
+$font-size-u2: #{ms(2)}em !default;
+$font-size-u3: #{ms(3)}em !default;
+$font-size-u4: #{ms(4)}em !default;
+$font-size-u5: #{ms(5)}em !default;
+$font-size-u6: #{ms(6)}em !default;
+
+// Font Size Relative - Size Decreases
+$font-size-d1: #{ms(-1)}em !default;
+$font-size-d2: #{ms(-2)}em !default;
+$font-size-d3: #{ms(-3)}em !default;
+$font-size-d4: #{ms(-4)}em !default;
+$font-size-d5: #{ms(-5)}em !default;
+$font-size-d6: #{ms(-6)}em !default;
+
+// Font Size REM
+$font-size-rem: #{ms(0)}rem !default;
+
+// Font Size REM - Size Increases
+$font-size-rem-u1: #{ms(1)}rem !default;
+$font-size-rem-u2: #{ms(2)}rem !default;
+$font-size-rem-u3: #{ms(3)}rem !default;
+$font-size-rem-u4: #{ms(4)}rem !default;
+$font-size-rem-u5: #{ms(5)}rem !default;
+$font-size-rem-u6: #{ms(6)}rem !default;
+
+// Font Size REM - Size Decreases
+$font-size-rem-d1: #{ms(-1)}rem !default;
+$font-size-rem-d2: #{ms(-2)}rem !default;
+$font-size-rem-d3: #{ms(-3)}rem !default;
+$font-size-rem-d4: #{ms(-4)}rem !default;
+$font-size-rem-d5: #{ms(-5)}rem !default;
+$font-size-rem-d6: #{ms(-6)}rem !default;
+
+// Line Height
+$line-height: 1.5 !default;

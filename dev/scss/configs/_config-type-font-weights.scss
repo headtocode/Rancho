@@ -1,0 +1,37 @@
+///
+// Rancho Config - Font Weights
+//
+// @group Config Typography
+// @since 1.0.0-alpha.1
+///
+
+
+// Some font families will only have a few weights to chose from. You can
+// use this setup to apply those limited weights to multiple variables,
+// thus filling in the blanks. The example below shows how you might apply
+// weights for a font with only normal (400) and bold (700) weights.
+//
+// $font-weight-100: 400;
+// $font-weight-200: 400;
+// $font-weight-300: 400;
+// $font-weight-400: 400;
+// $font-weight-500: 400;
+// $font-weight-600: 700;
+// $font-weight-700: 700;
+// $font-weight-800: 700;
+// $font-weight-900: 700;
+
+$font-weight-100: 100 !default;
+$font-weight-200: 200 !default;
+$font-weight-300: 300 !default;
+$font-weight-400: 400 !default;
+$font-weight-500: 500 !default;
+$font-weight-600: 600 !default;
+$font-weight-700: 700 !default;
+$font-weight-800: 800 !default;
+$font-weight-900: 900 !default;
+
+//  Human-readable font weight variables
+$font-weight-light: $font-weight-300 !default;
+$font-weight-normal: $font-weight-400 !default;
+$font-weight-bold: $font-weight-700 !default;

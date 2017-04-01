@@ -1,0 +1,99 @@
+/**
+ * Components - Images - Billboards
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.billboard {
+  position: relative;
+  text-align: $text-align-billboard;
+}
+
+.billboard__media {
+  display: block;
+  object-fit: cover;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.billboard__text {
+  color: $color-font-billboard-text;
+  margin: 0;
+  @include has-color-bg-billboard-text();
+  @include has-border-radius-billboard-text();
+  @include has-text-transform-billboard-text;
+}
+
+.billboard__text,
+.billboard .card {
+  position: absolute;
+    top: $spacer-y-billboard-text;
+    left: $spacer-x-billboard-text;
+}
+
+
+/**
+ * Components - Images - Billboards - Billboard Headline
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* Top */
+.billboard__text--top-left,
+.billboard .card--top-left {
+  top: $spacer-y-billboard-text;
+  left: $spacer-x-billboard-text;
+}
+
+.billboard__text--top-center {
+  top: $spacer-y-billboard-text;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.billboard__text--top-right {
+  top: $spacer-y-billboard-text;
+  right: $spacer-x-billboard-text;
+  left: auto;
+}
+
+/* Middle */
+.billboard__text--middle-left {
+  top: 50%;
+  left: $spacer-x-billboard-text;
+  transform: translate(0, -50%);
+}
+
+.billboard__text--middle-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.billboard__text--middle-right {
+  top: 50%;
+  right: $spacer-x-billboard-text;
+  left: auto;
+  transform: translate(0, -50%);
+}
+
+/* Bottom */
+.billboard__text--bottom-left {
+  top: auto;
+  bottom: $spacer-y-billboard-text;
+  left: $spacer-x-billboard-text;
+}
+
+.billboard__text--bottom-center {
+  top: auto;
+  bottom: $spacer-y-billboard-text;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.billboard__text--bottom-right {
+  top: auto;
+  right: $spacer-x-billboard-text;
+  bottom: $spacer-y-billboard-text;
+  left: auto;
+}

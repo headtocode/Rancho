@@ -1,0 +1,23 @@
+/**
+ * Typography - Font Weights
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  light: $font-weight-light,
+  normal: $font-weight-normal,
+  bold: $font-weight-bold
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.weight', 'font-weight', $_suffix-value);
+
+///
+// Example:
+//
+// .weight-bold-md {
+//   font-weight: $font-weight-bold;
+// }
+///

@@ -1,0 +1,33 @@
+/**
+ * Typography - Font Sizes - EM
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  null: $font-size,
+  u1: $font-size-u1,
+  u2: $font-size-u2,
+  u3: $font-size-u3,
+  u4: $font-size-u4,
+  u5: $font-size-u5,
+  u6: $font-size-u6,
+  d1: $font-size-d1,
+  d2: $font-size-d2,
+  d3: $font-size-d3,
+  d4: $font-size-d4,
+  d5: $font-size-d5,
+  d6: $font-size-d6
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.font-size-em', 'font-size', $_suffix-value);
+
+///
+// Example:
+//
+// .font-size-em-u5-md {
+//   font-size: $font-size-u5;
+// }
+///

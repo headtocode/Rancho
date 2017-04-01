@@ -1,0 +1,45 @@
+/**
+ * Menus - Horizontal
+ *
+ * Menu bars differ from inline menus in that they only display
+ * in a row above a certain viewport width; they look like regular
+ * menus below that threshold.
+ *
+ * Menu bars are most commonly used for global header navigation
+ * and can take advantage of mobile dropdown scripts when viewed on a
+ * smaller screen, where they'll appear as a traditional dropdown
+ * menu on smaller devices.
+ *
+ * Use the inline menus component when you want your menus items to
+ * remain horizontal regardless of the viewport width.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+@media screen and (min-width: $media-query-mobile-nav) {
+  .menu--bar,
+  .menu--bar > .menu-item {
+    display: flex;
+      align-items: stretch;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .menu--bar > .menu-item {
+    margin: 0 spacer(x, d1);
+  }
+
+  .menu--bar > .menu-item:first-of-type {
+    margin-left: 0;
+  }
+
+  .menu--bar > .menu-item:last-of-type {
+    margin-right: 0;
+  }
+
+  .menu--bar > .menu-item > .menu-link {
+    padding: spacer(y) 0;
+  }
+}

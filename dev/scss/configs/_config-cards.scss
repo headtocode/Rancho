@@ -1,0 +1,74 @@
+///
+// Rancho Config - Components - Cards
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Card Border Radius
+$has-border-radius-card: 'true' !default;
+$border-radius-card: $border-radius !default;
+
+// Card Border
+$has-borders-card: 'false' !default;
+
+// Card Border Width
+$border-width-card: $border-width !default;
+
+// Card Border Style
+$border-style-card: $border-style !default;
+
+// Card Border Color
+$color-border-card: $color-border !default;
+
+// Card Border
+$border-card: $border-width-card $border-style-card $color-border-card !default;
+
+// Card Box Shadow
+$has-box-shadow-card: 'true' !default;
+$box-shadow-card: $box-shadow !default;
+
+// Card Spacers (Margin & Padding)
+$spacer-card-x: spacer(x) !default;
+$spacer-card-y: spacer(y) !default;
+$spacer-card-xy: spacer(x) !default;
+
+// Card Background Color
+$color-bg-card: color(white);
+
+// Card Header Background Color
+$color-bg-card-header: $color-bg-card;
+
+// Card Footer Background Color
+$color-bg-card-footer: $color-bg-card;
+
+
+///
+// Rancho Config - Components - Card Mixins
+//
+// @since 1.0.0-alpha.1
+///
+
+@mixin has-border-card() {
+  @if $has-borders-card == 'true' {
+    border: $border-card;
+  }
+}
+
+@mixin has-border-radius-card() {
+  @if $has-border-radius-card == 'true' {
+    border-radius: $border-radius-card;
+  }
+}
+
+@mixin has-box-shadow-card() {
+  @if $has-box-shadow-card == 'true' and $has-box-shadow-global == 'true' {
+    box-shadow: $box-shadow-card;
+  }
+}
+
+@mixin has-box-shadow-inset-card() {
+  @if $has-box-shadow-inset-card == 'true' and $has-box-shadow-inset-global == 'true' {
+    box-shadow: $box-shadow-inset-card;
+  }
+}

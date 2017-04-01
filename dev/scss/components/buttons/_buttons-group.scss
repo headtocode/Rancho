@@ -1,0 +1,69 @@
+/**
+ * Buttons - Button Group
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn-group {
+  border: $border;
+  border-color: $color-bg-btn;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  display: flex;
+    flex: 0 0 auto;
+  margin-bottom: spacer(y);
+  position: relative;
+}
+
+.btn-group > .btn,
+.btn-group > .contaner-dropdown > .btn {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  margin: 0;
+}
+
+/* Simulates indented groove between buttons using transparent black/white. */
+.btn-group > .btn,
+.btn-group > .contaner-dropdown > .btn {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-group > .btn:first-child,
+.btn-group > .contaner-dropdown:first-child > .btn {
+  border-left: none;
+}
+
+.btn-group > .btn:last-child,
+.btn-group > .contaner-dropdown:last-child > .btn {
+  border-right: none;
+}
+
+
+/**
+ * Buttons - Button Group - Button Group States
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn-group-info {
+  border-color: color(info);
+}
+
+.btn-group-danger {
+  border-color: color(danger);
+}
+
+.btn-group-success {
+  border-color: color(success);
+}
+
+.btn-group-subdued {
+  border-color: color(gray-light);
+}
+
+.btn-group-warning {
+  border-color: color(warning);
+}

@@ -1,0 +1,51 @@
+/**
+ * Elements - Lists
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+dl,
+ol,
+ul {
+  margin: spacer(y) 0;
+}
+
+dl:first-child,
+ol:first-child,
+ul:first-child {
+  margin-top: 0;
+}
+
+dl:last-child,
+ol:last-child,
+ul:last-child {
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+li ol,
+li ul {
+  padding-left: 2em;
+}
+
+li {
+  line-height: $line-height;
+  margin-bottom: spacer(y, d1);
+}
+
+dt {
+  font-weight: $font-weight-bold;
+}
+
+dd {
+  margin-bottom: spacer(y);
+  margin-left: 0;
+}
+
+dd:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,0 +1,39 @@
+/**
+ * Elements - Misc
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+abbr[title] {
+  border: none;
+  text-decoration: none;
+}
+
+hr {
+  border-style: none;
+  border-bottom: $border-alt;
+  margin-bottom: spacer(y);
+  outline: none;
+}
+
+iframe {
+  margin: 0 auto;
+}
+
+pre {
+  max-width: 100%;
+}
+
+
+/**
+ * Consider using something like PrismJS to create better code styles.
+ * http://prismjs.com/
+ */
+
+code {
+  border-radius: $border-radius;
+  background: color(black);
+  color: lime;
+  display: inline-block; /* To apply padding to inline code samples. */
+  padding: 0 spacer(x);
+}

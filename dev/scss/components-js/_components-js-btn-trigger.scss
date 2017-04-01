@@ -1,0 +1,41 @@
+/**
+ * JS Components - Trigger Button
+ *
+ * The Trigger Button has no padding, borders, margins, etc. It's meant to be
+ * used as a container for image or icon buttons that trigger an action,
+ * like a profile dropdown.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.js-trigger,
+.js-trigger:link,
+.js-trigger:visited,
+.js-trigger:hover,
+.js-trigger:focus,
+.js-trigger:active {
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.js-trigger--padded,
+.js-trigger--padded:link,
+.js-trigger--padded:visited,
+.js-trigger--padded:hover,
+.js-trigger--padded:focus,
+.js-trigger--padded:active {
+  padding: spacer(x);
+}
+
+.js-trigger--padded-left,
+.js-trigger--padded-left:link,
+.js-trigger--padded-left:visited,
+.js-trigger--padded-left:hover,
+.js-trigger--padded-left:focus,
+.js-trigger--padded-left:active {
+  padding-left: spacer(x, d1);
+}

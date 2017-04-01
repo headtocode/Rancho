@@ -1,0 +1,249 @@
+///
+// Rancho Config - Colors
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+
+///
+// Color Map: Spectrum
+//
+// Visual color spectrum, including visited, hover, focus and active variants.
+//
+// @since 1.0.0-alpha.1
+///
+
+// Site Backgrounds
+$color-bg-body: #fbfbfb !default;
+
+// Brand Colors
+$color-brand-primary: #d72346 !default;
+$color-brand-secondary: #421347 !default;
+
+// Set Spectrum
+$color-red: #d72346 !default;
+$color-orange: #d43900 !default;
+$color-yellow: #f6c54e !default;
+$color-green: #0a7a44 !default;
+$color-blue: #006dbb !default;
+$color-purple: #421349 !default;
+
+// Set Grayscale
+$color-black: #000 !default;
+$color-gray-darker: #252526 !default;
+$color-gray-dark: #494b4d !default;
+$color-gray: #6c6e70 !default;
+$color-gray-light: #d2d7d9 !default;
+$color-gray-lighter: #ebf0f2 !default;
+$color-white: #fff !default;
+
+// Set Status Colors
+$color-state-danger: $color-red !default;
+$color-state-info: $color-blue !default;
+$color-state-subdued: $color-gray !default;
+$color-state-success: $color-green !default;
+$color-state-warning: $color-orange !default;
+
+
+// Map colors and create variants for LVHA states
+$palette: (
+
+  // Backgrounds
+  "bg-light": (
+    base: $color-bg-body,
+  ),
+
+  // Brand
+  "brand": (
+    base: $color-brand-primary,
+    visited: $color-brand-primary,
+    hover: darken($color-brand-primary, 10%),
+    focus: darken($color-brand-primary, 10%),
+    active: darken($color-brand-primary, 15%)
+  ),
+  "brand-secondary": (
+    base: $color-brand-secondary,
+    visited: $color-brand-secondary,
+    hover: darken($color-brand-secondary, 10%),
+    focus: darken($color-brand-secondary, 10%),
+    active: darken($color-brand-secondary, 15%)
+  ),
+
+  // Spectrum
+  "red": (
+    base: $color-red,
+    visited: $color-red,
+    hover: darken($color-red, 10%),
+    focus: darken($color-red, 10%),
+    active: darken($color-red, 15%)
+  ),
+  "orange": (
+    base: $color-orange,
+    visited: $color-orange,
+    hover: darken($color-orange, 10%),
+    focus: darken($color-orange, 10%),
+    active: darken($color-orange, 15%)
+  ),
+  "yellow": (
+    base: $color-yellow,
+    visited: $color-yellow,
+    hover: darken($color-yellow, 10%),
+    focus: darken($color-yellow, 10%),
+    active: darken($color-yellow, 15%)
+  ),
+  "green": (
+    base: $color-green,
+    visited: $color-green,
+    hover: darken($color-green, 10%),
+    focus: darken($color-green, 10%),
+    active: darken($color-green, 15%)
+  ),
+  "blue": (
+    base: $color-blue,
+    visited: $color-blue,
+    hover: darken($color-blue, 10%),
+    focus: darken($color-blue, 10%),
+    active: darken($color-blue, 15%)
+  ),
+  "purple": (
+    base: $color-purple,
+    visited: $color-purple,
+    hover: darken($color-purple, 10%),
+    focus: darken($color-purple, 10%),
+    active: darken($color-purple, 15%)
+  ),
+
+  // Grayscale
+  "black": (
+    base: $color-black,
+    visited: $color-black,
+    hover: lighten($color-black, 5%),
+    focus: lighten($color-black, 5%),
+    active: lighten($color-black, 5%)
+  ),
+  "gray-darker": (
+    base: $color-gray-darker,
+    visited: $color-gray-darker,
+    hover: lighten($color-gray-darker, 5%),
+    focus: lighten($color-gray-darker, 5%),
+    active: lighten($color-gray-darker, 5%)
+  ),
+  "gray-dark": (
+    base: $color-gray-dark,
+    visited: $color-gray-dark,
+    hover: lighten($color-gray-dark, 5%),
+    focus: lighten($color-gray-dark, 5%),
+    active: lighten($color-gray-dark, 5%)
+  ),
+  "gray": (
+    base: $color-gray,
+    visited: $color-gray,
+    hover: darken($color-gray, 5%),
+    focus: darken($color-gray, 5%),
+    active: darken($color-gray, 5%)
+  ),
+  "gray-light": (
+    base: $color-gray-light,
+    visited: $color-gray-light,
+    hover: darken($color-gray-light, 5%),
+    focus: darken($color-gray-light, 5%),
+    active: darken($color-gray-light, 5%)
+  ),
+  "gray-lighter": (
+    base: $color-gray-lighter,
+    visited: $color-gray-lighter,
+    hover: darken($color-gray-lighter, 5%),
+    focus: darken($color-gray-lighter, 5%),
+    active: darken($color-gray-lighter, 5%)
+  ),
+  "white": (
+    base: $color-white,
+    visited: $color-white,
+    hover: darken($color-white, 5%),
+    focus: darken($color-white, 5%),
+    active: darken($color-white, 5%)
+  ),
+
+  // Status Colors
+  "danger": (
+    base: $color-state-danger,
+    visited: $color-state-danger,
+    hover: darken($color-state-danger, 10%),
+    focus: darken($color-state-danger, 10%),
+    active: darken($color-state-danger, 15%)
+  ),
+  "info": (
+    base: $color-state-info,
+    visited: $color-state-info,
+    hover: darken($color-state-info, 10%),
+    focus: darken($color-state-info, 10%),
+    active: darken($color-state-info, 15%)
+  ),
+  "subdued": (
+    base: $color-state-subdued,
+    visited: $color-state-subdued,
+    hover: darken($color-state-subdued, 5%),
+    focus: darken($color-state-subdued, 5%),
+    active: darken($color-state-subdued, 5%)
+  ),
+  "success": (
+    base: $color-state-success,
+    visited: $color-state-success,
+    hover: darken($color-state-success, 10%),
+    focus: darken($color-state-success, 10%),
+    active: darken($color-state-success, 15%)
+  ),
+  "warning": (
+    base: $color-state-warning,
+    visited: $color-state-warning,
+    hover: darken($color-state-warning, 10%),
+    focus: darken($color-state-warning, 10%),
+    active: darken($color-state-warning, 15%)
+  )
+) !default;
+
+
+///
+// Color Functions - Color
+//
+// Returns color and optional variants (lighter, darker, hover).
+//
+// @example color(success, hover)
+// @example color(brand)
+// @since 1.0.0-alpha.1
+///
+
+@function color($color-name, $color-variant: base) {
+  @return map-get(map-get($palette, #{$color-name}), $color-variant);
+}
+
+
+///
+// Color Functions - Tones
+//
+// Allows you to lighten or darken a color using the color() function.
+//
+// Cleaner:
+// lighten(color(red, base), 10%);
+// vs
+// tone(red, darken, 10%);
+//
+// Not necessarily useful if you're not modifying mapped colors.
+//
+// @since 1.0.0-alpha.1
+///
+
+@function tone($color-name, $tone, $percent: 10%) {
+  $_the-color: color($color-name, base);
+  
+  @if $tone == 'lighten' {
+    $_the-color: lighten($_the-color, $percent)
+  } @else if $tone == 'darken' {
+    $_the-color: darken($_the-color, $percent)
+  } @else {
+    @warn 'Please enter a value of either \'lighten\' or \'darken\'.';
+  }
+
+  @return $_the-color;
+}

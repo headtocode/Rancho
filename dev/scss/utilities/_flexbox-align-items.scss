@@ -1,0 +1,31 @@
+/**
+ * Flex Box - Align Items
+ *
+ * Responsive utility classes for aligning flex items in components.
+ *
+ * Please refer to CSS Trick's excellent guide to Flexbox for detailed
+ * references to any of the properties used below:
+ * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  baseline: baseline,
+  stretch: stretch
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.align-items', 'align-items', $_suffix-value);
+
+///
+// Example:
+//
+// .align-items-start-md {
+//   align-items: flex-start;
+// }
+///

@@ -1,0 +1,23 @@
+/**
+ * Typography - Font Families
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  sans: $font-family-sans,
+  serif: $font-family-serif,
+  mono: $font-family-mono
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.font-family', 'font-family', $_suffix-value);
+
+///
+// Example:
+//
+// .font-family-sans-md {
+//   font-family: $font-family-sans;
+// }
+///

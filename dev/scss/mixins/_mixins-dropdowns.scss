@@ -1,0 +1,18 @@
+///
+// Rancho Mixins - Dropdowns
+//
+// @group Mixins
+// @since 1.0.0-alpha.1
+///
+
+@mixin dropdown($width: 320px) {
+  @if $border-has-radius-menu == 'true' {
+    border-radius: $border-radius-menu;
+  }
+  box-shadow: $box-shadow-u4;
+  position: absolute;
+    left: 0;
+    top: 110%;
+  width: $width;
+  z-index: $zindex-dropdown;
+}

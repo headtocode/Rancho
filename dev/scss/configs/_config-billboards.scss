@@ -1,0 +1,68 @@
+///
+// Rancho Config - Billboards
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+
+///
+// Rancho Config - Billboard Headlines
+//
+// @since 1.0.0-alpha.1
+///
+
+// Background Color
+$has-color-bg-billboard-text: 'true' !default;
+$color-bg-billboard-text: color(black) !default;
+
+// Border Radius
+$has-border-radius-billboard-text: 'true' !default;
+$border-radius-billboard-text: $border-radius !default;
+
+// Font Color
+$color-font-billboard-text: $color-font-inverse;
+
+// Font Weight
+$font-weight-billboard-text: $font-weight-bold !default;
+
+// Padding
+$spacer-y-billboard-text: spacer(y, d1) !default;
+$spacer-x-billboard-text: spacer(x) !default;
+$spacer-xy-billboard-text: spacer(x) !default;
+
+// Text Align
+$text-align-billboard: center !default;
+
+// Text Transform
+$text-transform-billboard-text: uppercase !default; // Use null if undefined.
+
+
+///
+// Rancho Config - Billboard - Mixins
+//
+// @since 1.0.0-alpha.1
+///
+
+// Have a colored background?
+@mixin has-color-bg-billboard-text() {
+  @if $has-color-bg-billboard-text == 'true' {
+    background-color: $color-bg-billboard-text;
+    box-shadow: $box-shadow-u4;
+    padding: $spacer-y-billboard-text $spacer-x-billboard-text;
+  }
+}
+
+// Have a rounded border?
+@mixin has-border-radius-billboard-text() {
+  @if $has-border-radius-billboard-text == 'true' {
+    border-radius: $border-radius-billboard-text;
+  }
+}
+
+// Have text transform applied?
+@mixin has-text-transform-billboard-text() {
+  @if $text-transform-billboard-text {
+    text-transform: $text-transform-billboard-text;
+  }
+}

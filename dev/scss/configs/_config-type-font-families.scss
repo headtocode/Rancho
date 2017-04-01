@@ -1,0 +1,24 @@
+///
+// Rancho Config - Font Families
+//
+// @group Config Typography
+// @since 1.0.0-alpha.1
+///
+
+
+// Font Families
+//
+// The Rancho Framework is designed to use system interface fonts unless
+// web fonts are specified first.
+
+// Sans Serif Font Stack
+$font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+// Serif Font Stack
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+
+// Mono Font Stack
+$font-family-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// Theme Default Font Family
+$font-family-base: $font-family-sans !default;

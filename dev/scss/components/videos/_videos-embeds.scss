@@ -1,0 +1,47 @@
+/**
+ * Video - Embeds
+ *
+ * Provides a responsive wrapper for embedded videos from YouTube, Vimeo, etc.
+ * Create a div or other container with the .video-wrapper class and place the
+ * video embed inside. You can adjust the aspect ratio by changing the bottom
+ * padding percentage for the .video-wrapper class.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* 16:9 aspect ratio (default) */
+.video-wrapper {
+  clear: both;
+  float: none;
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: spacer(y);
+  position: relative;
+  width: 100%;
+}
+
+/* 4:3 aspect ratio */
+.video-wrapper--4-3 {
+  padding-bottom: 75%;
+}
+
+/* 1:1 square aspect ratio */
+.video-wrapper--1-1 {
+  padding-bottom: 100%;
+}
+
+.video-wrapper iframe {
+  height: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+  width: 100%;
+}
+
+.video-wrapper p {
+  height: 100%;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+  width: 100%;
+}

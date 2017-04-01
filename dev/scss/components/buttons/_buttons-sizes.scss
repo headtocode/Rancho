@@ -1,0 +1,17 @@
+/**
+ * Buttons - Button Sizes
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--large,
+a.btn--large {
+  font-size: $font-size-btn-large;
+  padding: $spacer-btn-large-y $spacer-btn-large-x;
+}
+
+.btn--small,
+a.btn--small {
+  font-size: $font-size-btn-small;
+  padding: $spacer-btn-small-y $spacer-btn-x;
+}

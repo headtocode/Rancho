@@ -1,0 +1,31 @@
+/**
+ * Flex Box - Justify Content
+ *
+ * Responsive utility classes for justifying flex content in components.
+ *
+ * Please refer to CSS Trick's excellent guide to Flexbox for detailed
+ * references to any of the properties used below:
+ * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  between: space-between,
+  around: space-around
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.justify', 'justify-content', $_suffix-value);
+
+///
+// Example:
+//
+// .justify-start-md {
+//   justify-content: flex-start;
+// }
+///

@@ -1,0 +1,64 @@
+/**
+ * Buttons - Button Link
+ *
+ * This resembles a link and can be used over light backgrounds when you
+ * need a button element but you don't want it to look like one.
+ *
+ * Use .btn--link-inverse when your background is dark (see below).
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--link,
+.btn--link:link,
+.btn--link:visited  {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: $color-link;
+}
+
+.btn--link:hover,
+.btn--link:focus,
+.btn--link:active {
+  background: transparent;
+  border-color: transparent;
+  color: $color-link-hov;
+}
+
+.btn--link:active {
+  color: $color-link-act;
+  box-shadow: none;
+}
+
+
+/**
+ * Buttons - Button Link (Inverse)
+ *
+ * This resembles a contrast link and can be used over dark backgrounds when you
+ * need a button element but you don't want it to look like one.
+ *
+ * Use .btn--link when your background is light.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.btn--link-inverse,
+.btn--link-inverse:link,
+.btn--link-inverse:visited  {
+  background: transparent;
+  border-color: transparent;
+  color: $color-font-inverse;
+}
+
+.btn--link-inverse:hover,
+.btn--link-inverse:focus {
+  background: transparent;
+  border-color: transparent;
+  color: $color-link-inverse;
+}
+
+.btn--link-inverse:active {
+  color: $color-link-act-inverse;
+}
+

@@ -1,0 +1,234 @@
+///
+// Rancho Config - Components - Buttons
+//
+// Variables for buttons, including button borders and other components.
+// Button specific mixins are at the bottom.
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Border Radius
+$has-border-radius-btn: 'true' !default;
+$border-radius-btn: $border-radius !default;
+$border-radius-btn-large: $border-radius-u1 !default;
+$border-radius-btn-small: $border-radius-d1 !default;
+
+// Border Width
+$border-width-btn: $border-width-u1 !default;
+
+// Border Style
+$border-style-btn: $border-style !default;
+
+// Box Shadow
+$has-box-shadow-btn: 'true' !default;
+$box-shadow-btn: $box-shadow !default;
+
+// Box Shadow Inset
+$has-box-shadow-inset-btn: 'true' !default;
+$box-shadow-inset-btn: $box-shadow-inset !default;
+
+// Font Family
+$font-family-btn: $font-family-sans !default;
+
+// Font Weight
+$font-weight-btn: $font-weight-bold !default;
+
+// Spacers (Margin & Padding)
+$spacer-btn-x: spacer(x, d1) !default;
+$spacer-btn-y: spacer(y, d1) !default;
+$spacer-btn-large-x: spacer(x) !default;
+$spacer-btn-large-y: spacer(y) !default;
+$spacer-btn-small-x: spacer(x, d2) !default;
+$spacer-btn-small-y: spacer(y, d2) !default;
+
+// Font Sizes
+$font-size-btn-large: $font-size-u2;
+$font-size-btn-small: $font-size-d1;
+
+
+///
+// Rancho Config - Components - Buttons - Default
+//
+// @since 1.0.0-alpha.1
+///
+$color-border-btn: color(brand) !default;
+$border-btn: $border-width-btn $border-style-btn $color-border-btn !default;
+$color-bg-btn: color(brand) !default;
+$color-font-btn: color(white) !default;
+
+$color-border-btn-vis: color(brand, visited) !default;
+$color-bg-btn-vis: color(brand, visited) !default;
+$color-font-btn-vis: $color-font-btn !default;
+
+$color-border-btn-hov: color(brand, hover) !default;
+$color-bg-btn-hov: color(brand, hover) !default;
+$color-font-btn-hov: $color-font-btn !default;
+
+$color-border-btn-foc: color(brand, focus) !default;
+$color-bg-btn-foc: $color-bg-btn-hov !default;
+$color-font-btn-foc: $color-font-btn-hov !default;
+
+$color-border-btn-act: color(brand, active) !default;
+$color-bg-btn-act: color(brand, active) !default;
+$color-font-btn-act: $color-font-btn !default;
+
+
+///
+// Rancho Config - Components - Buttons - Subdued
+//
+// @since 1.0.0-alpha.1
+///
+$color-border-btn-subdued: color(white) !default;
+$border-btn-subdued: $border-width-btn $border-style-btn $color-border-btn-subdued !default;
+$color-bg-btn-subdued: color(white) !default;
+$color-font-btn-subdued: $color-font !default;
+
+$color-border-btn-subdued-vis: $color-border-btn-subdued !default;
+$color-bg-btn-subdued-vis: color(white, visited) !default;
+$color-font-btn-subdued-vis: $color-font-btn-subdued !default;
+
+$color-border-btn-subdued-hov: color(white, hover) !default;
+$color-bg-btn-subdued-hov: color(white, hover) !default;
+$color-font-btn-subdued-hov: $color-font-btn-subdued !default;
+
+$color-border-btn-subdued-foc: color(white, focus) !default;
+$color-bg-btn-subdued-foc: color(white, hover) !default;
+$color-font-btn-subdued-foc: $color-font-btn-subdued !default;
+
+$color-border-btn-subdued-act: color(white, active) !default;
+$color-bg-btn-subdued-act: color(white, active) !default;
+$color-font-btn-subdued-act: $color-font-btn-subdued !default;
+
+
+///
+// Rancho Config - Components - Buttons - Button States - Danger
+//
+// @since 1.0.0-alpha.1
+///
+$color-border-btn-danger: color(danger) !default;
+$border-btn-danger: $border-width-btn $border-style-btn $border-danger !default;
+$color-bg-btn-danger: color(danger) !default;
+$color-font-btn-danger: color(white) !default;
+
+$color-border-btn-danger-vis: color(danger, visited) !default;
+$color-bg-btn-danger-vis: color(danger, visited) !default;
+$color-font-btn-danger-vis: $color-font-btn-danger !default;
+
+$color-border-btn-danger-hov: color(danger, hover) !default;
+$color-bg-btn-danger-hov: color(danger, hover) !default;
+$color-font-btn-danger-hov: $color-font-btn-danger !default;
+
+$color-border-btn-danger-foc: color(danger, focus) !default;
+$color-bg-btn-danger-foc: color(danger, focus) !default;
+$color-font-btn-foc: $color-font-btn-danger !default;
+
+$color-border-btn-danger-act: color(danger, active) !default;
+$color-bg-btn-danger-act: color(danger, active) !default;
+$color-font-btn-danger-act: $color-font-btn-danger !default;
+
+
+///
+// Rancho Config - Components - Buttons - Button States - Info
+//
+// @since 1.0.0-alpha.1
+///
+$color-border-btn-info: color(info) !default;
+$border-btn-info: $border-width-btn $border-style-btn $border-info !default;
+$color-bg-btn-info: color(info) !default;
+$color-font-btn-info: color(white) !default;
+
+$color-border-btn-info-vis: color(info, visited) !default;
+$color-bg-btn-info-vis: color(info, visited) !default;
+$color-font-btn-info-vis: $color-font-btn-info !default;
+
+$color-border-btn-info-hov: color(info, hover) !default;
+$color-bg-btn-info-hov: color(info, hover) !default;
+$color-font-btn-info-hov: $color-font-btn-info !default;
+
+$color-border-btn-info-foc: color(info, focus) !default;
+$color-bg-btn-info-foc: color(info, focus) !default;
+$color-font-btn-info-foc: $color-font-btn-info !default;
+
+$color-border-btn-info-act: color(info, active) !default;
+$color-bg-btn-info-act: color(info, active) !default;
+$color-font-btn-info-act: $color-font-btn-info !default;
+
+
+///
+// Rancho Config - Components - Buttons - Button States - Success
+//
+// @since 1.0.0-alpha.1
+///
+$color-border-btn-success: color(success) !default;
+$border-btn-success: $border-width-btn $border-style-btn $border-success !default;
+$color-bg-btn-success: color(success) !default;
+$color-font-btn-success: color(white) !default;
+
+$color-border-btn-success-vis: color(success, visited) !default;
+$color-bg-btn-success-vis: color(success, visited) !default;
+$color-font-btn-success-vis: $color-font-btn-success !default;
+
+$color-border-btn-success-hov: color(success, hover) !default;
+$color-bg-btn-success-hov: color(success, hover) !default;
+$color-font-btn-success-hov: $color-font-btn-success !default;
+
+$color-border-btn-success-foc: color(success, focus) !default;
+$color-bg-btn-success-foc: color(success, focus) !default;
+$color-font-btn-success-foc: $color-font-btn-success !default;
+
+$color-border-btn-success-act: color(success, active) !default;
+$color-bg-btn-success-act: color(success, active) !default;
+$color-font-btn-success-act: $color-font-btn-success !default;
+
+
+///
+// Rancho Config - Components - Buttons - Button States - Warning
+//
+// @since 1.0.0-alpha.1
+///
+$color-border-btn-warning: color(warning) !default;
+$border-btn-warning: $border-width-btn $border-style-btn $border-warning !default;
+$color-bg-btn-warning: color(warning) !default;
+$color-font-btn-warning: color(white) !default;
+
+$color-border-btn-warning-vis: color(warning, visited) !default;
+$color-bg-btn-warning-vis: color(warning, visited) !default;
+$color-font-btn-warning-vis: $color-font-btn-warning !default;
+
+$color-border-btn-warning-hov: color(warning, hover) !default;
+$color-bg-btn-warning-hov: color(warning, hover) !default;
+$color-font-btn-warning-hov: $color-font-btn-warning !default;
+
+$color-border-btn-warning-foc: color(warning, focus) !default;
+$color-bg-btn-warning-foc: color(warning, focus) !default;
+$color-font-btn-warning-foc: $color-font-btn-warning !default;
+
+$color-border-btn-warning-act: color(warning, active) !default;
+$color-bg-btn-warning-act: color(warning, active) !default;
+$color-font-btn-warning-act: $color-font-btn-warning !default;
+
+
+///
+// Rancho Config - Components - Buttons - Button Mixins
+//
+// @since 1.0.0-alpha.1
+///
+
+@mixin has-border-radius-btn() {
+  @if $has-border-radius-btn == 'true' {
+    border-radius: $border-radius-btn;
+  }
+}
+
+@mixin has-box-shadow-btn() {
+  @if $has-box-shadow-btn == 'true' and $has-box-shadow-global == 'true' {
+    box-shadow: $box-shadow-btn;
+  }
+}
+
+@mixin has-box-shadow-inset-btn() {
+  @if $has-box-shadow-inset-btn == 'true' and $has-box-shadow-inset-global == 'true' {
+    box-shadow: $box-shadow-inset-btn;
+  }
+}

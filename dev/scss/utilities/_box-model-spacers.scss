@@ -1,0 +1,135 @@
+/**
+ * Box Model - Paddings
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+
+/**
+ * Utilities - Spacers - Margins and Padding
+ *
+ * Generates responsive utility classes for margin and padding.
+ * Logic based off the Bootstrap 4 setup.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $suffix: breakpoint-suffix($breakpoint, $breakpoints);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @each $size, $lengths in $spacers {
+        $length-x: map-get($lengths, x);
+        $length-y: map-get($lengths, y);
+        
+        @if $size == null {
+          .#{$abbrev}a#{$suffix}  {
+            #{$prop}: $length-y $length-x !important; /*! Boopio */
+          }
+
+          .#{$abbrev}t#{$suffix} {
+            #{$prop}-top: $length-y !important;
+          }
+
+          .#{$abbrev}r#{$suffix} {
+            #{$prop}-right: $length-x !important;
+          }
+
+          .#{$abbrev}b#{$suffix} {
+            #{$prop}-bottom: $length-y !important;
+          }
+
+          .#{$abbrev}l#{$suffix} {
+            #{$prop}-left: $length-x !important;
+          }
+
+          .#{$abbrev}x#{$suffix} {
+            #{$prop}-right: $length-x !important;
+            #{$prop}-left: $length-x !important;
+          }
+
+          .#{$abbrev}y#{$suffix} {
+            #{$prop}-top: $length-y !important;
+            #{$prop}-bottom: $length-y !important;
+          }
+        } @else {
+          .#{$abbrev}a-#{$size}#{$suffix}  {
+            #{$prop}: $length-y $length-x !important; /*! Boopio */
+          }
+
+          .#{$abbrev}t-#{$size}#{$suffix} {
+            #{$prop}-top: $length-y !important;
+          }
+
+          .#{$abbrev}r-#{$size}#{$suffix} {
+            #{$prop}-right: $length-x !important;
+          }
+
+          .#{$abbrev}b-#{$size}#{$suffix} {
+            #{$prop}-bottom: $length-y !important;
+          }
+
+          .#{$abbrev}l-#{$size}#{$suffix} {
+            #{$prop}-left: $length-x !important;
+          }
+
+          .#{$abbrev}x-#{$size}#{$suffix} {
+            #{$prop}-right: $length-x !important;
+            #{$prop}-left: $length-x !important;
+          }
+
+          .#{$abbrev}y-#{$size}#{$suffix} {
+            #{$prop}-top: $length-y !important;
+            #{$prop}-bottom: $length-y !important;
+          }
+        }
+      }
+    }
+
+    // Some special margin utils
+    .ma-auto#{$suffix}  {
+      margin: auto !important;
+    }
+
+    .mt-auto#{$suffix} {
+      margin-top: auto !important;
+    }
+
+    .mr-auto#{$suffix} {
+      margin-right: auto !important;
+    }
+
+    .mb-auto#{$suffix} {
+      margin-bottom: auto !important;
+    }
+
+    .ml-auto#{$suffix} {
+      margin-left: auto !important;
+    }
+
+    .mx-auto#{$suffix} {
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    .my-auto#{$suffix} {
+      margin-top: auto !important;
+      margin-bottom: auto !important; /*! Moop */
+    }
+  }
+}
+
+
+/**
+ * Box Model - Padding - Combos
+ *
+ * Combos combine different padding sizes into a single class to reduce the
+ * number of utility classes necessary to achieve a certain look.
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+/* Adds padding to around content with extra white space at the bottom. */
+.padding-page {
+  padding: spacer(y, u2) spacer(x) spacer(y, u5);
+}

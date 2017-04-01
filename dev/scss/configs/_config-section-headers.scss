@@ -1,0 +1,15 @@
+///
+// Rancho Config - Masthead
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Masthead Background
+$color-bg-masthead: color(white);
+
+// Masthead Font Color
+$color-font-masthead: color(black);
+
+// Masthead Border
+$border-masthead: $border-width solid $color-border;

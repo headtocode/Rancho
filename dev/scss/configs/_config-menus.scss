@@ -1,0 +1,236 @@
+///
+// Rancho Config - Menus
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+// Menu Font Weight
+$font-weight-menu: $font-weight-bold;
+
+
+///
+// Rancho Config - Menus - Menu Border
+//
+// Menu borders include visited, hover, focus and active variables for
+// menu link pseudo classes.
+//
+// @since 1.0.0-alpha.1
+///
+
+// Menu Border
+$has-borders-menu: 'true' !default;
+
+// Border Width
+$border-width-menu: $border-width !default;
+
+// Border Style
+$border-style-menu: $border-style !default;
+
+// Border Colors
+$color-border-menu: $color-border !default;
+$color-border-menu-vis: $color-border !default;
+$color-border-menu-hov: $color-border !default;
+$color-border-menu-foc: $color-border !default;
+$color-border-menu-act: $color-border !default;
+
+// Border Menu Default
+$border-menu: $border-width-menu $border-style-menu $color-border-menu !default;
+
+// Border Menu Visited
+$border-menu-vis: $border-width-menu $border-style-menu $color-border-menu-vis !default;
+
+// Border Menu Hover
+$border-menu-hov: $border-width-menu $border-style-menu $color-border-menu-hov !default;
+
+// Border Menu Focus
+$border-menu-foc: $border-width-menu $border-style-menu $color-border-menu-foc !default;
+
+// Border Menu Active
+$border-menu-act: $border-width-menu $border-style-menu $color-border-menu-act !default;
+
+
+// In some cases, menus may be placed over a dark background. These variables
+// are used to apply inverse colors/styles for such instances.
+
+// Border Colors (Inverse)
+$color-border-menu-inverse: color(gray-darker) !default;
+$color-border-menu-vis-inverse: color(gray-darker) !default;
+$color-border-menu-hov-inverse: color(gray-darker) !default;
+$color-border-menu-foc-inverse: color(gray-darker) !default;
+$color-border-menu-act-inverse: color(gray-darker) !default;
+
+// Border Menu Default (Inverse)
+$border-menu-inverse: $border-width-menu $border-style-menu $color-border-menu-inverse !default;
+
+// Border Menu Visited (Inverse)
+$border-menu-vis-inverse: $border-width-menu $border-style-menu $color-border-menu-vis-inverse !default;
+
+// Border Menu Hover (Inverse)
+$border-menu-hov-inverse: $border-width-menu $border-style-menu $color-border-menu-hov-inverse !default;
+
+// Border Menu Focus (Inverse)
+$border-menu-foc-inverse: $border-width-menu $border-style-menu $color-border-menu-foc-inverse !default;
+
+// Border Menu Active (Inverse)
+$border-menu-act-inverse: $border-width-menu $border-style-menu $color-border-menu-act-inverse !default;
+
+
+///
+// Rancho Config - Menus - Menu Link General
+//
+// @since 1.0.0-alpha.1
+///
+
+// Menu Link Default Padding
+$spacer-x-menu-link: 0;
+$spacer-y-menu-link: spacer(y, d1);
+
+// Menu Link Padded (Modifier Class) Padding
+$spacer-x-menu-link-padded: spacer(x);
+$spacer-y-menu-link-padded: spacer(y, d1);
+
+
+///
+// Rancho Config - Menus - Menu Link Backgrounds & Font Colors
+//
+// @since 1.0.0-alpha.1
+///
+
+// Menu Link Background
+$has-color-bg-menu-link: 'false';
+
+// Menu Link Background Default
+$color-bg-link-menu: transparent;
+$color-link-menu: $color-link;
+
+// Menu Link Background Visited
+$color-bg-link-menu-vis: transparent;
+$color-link-menu-vis: $color-link-vis;
+
+// Menu Link Background Hover
+$color-bg-link-menu-hov: transparent;
+$color-link-menu-hov: $color-link-hov;
+
+// Menu Link Background Focus
+$color-bg-link-menu-foc: transparent;
+$color-link-menu-foc: $color-link-foc;
+
+// Menu Link Background Active
+$color-bg-link-menu-act: transparent;
+$color-link-menu-act: $color-link-act;
+
+// In some cases, menus may be placed over a dark background. These variables
+// are used to apply inverse colors/styles for such instances.
+
+// Menu Link Background Default (Inverse)
+$color-bg-link-menu-inverse: transparent;
+$color-link-menu-inverse: $color-link-inverse;
+
+// Menu Link Background Visited (Inverse)
+$color-bg-link-menu-vis-inverse: transparent;
+$color-link-menu-vis-inverse: $color-link-vis-inverse;
+
+// Menu Link Background Hover (Inverse)
+$color-bg-link-menu-hov-inverse: transparent;
+$color-link-menu-hov-inverse: $color-link-hov-inverse;
+
+// Menu Link Background Focus (Inverse)
+$color-bg-link-menu-foc-inverse: transparent;
+$color-link-menu-foc-inverse: $color-link-foc-inverse;
+
+// Menu Link Background Active (Inverse)
+$color-bg-link-menu-act-inverse: transparent;
+$color-link-menu-act-inverse: $color-link-act-inverse;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///
+// Rancho Config - Menus - Menu Dropdown
+//
+// @since 1.0.0-alpha.1
+///
+
+// Menus - Dropdown Border Radius
+$border-has-radius-menu: 'true';
+$border-radius-menu: $border-radius;
+
+// Menus - Dropdown Background
+$color-bg-menu-dropdown: color(white);
+
+// Dropdown Font Weight
+$font-weight-menu-nested: $font-weight-normal;
+
+// Dropdown Side Padding
+$spacer-x-menu-dropdown: spacer(x);
+
+// Dropdown Vertical Padding
+$spacer-y-menu-dropdown: 0;
+
+// Dropdown Width
+$width-menu-dropdown: 240px;
+
+
+///
+// Rancho Config - Menus - Mixins
+//
+// @since 1.0.0-alpha.1
+///
+
+// If menu borders are set to true, add a border.
+@mixin has-border-menu() {
+  @if $has-borders-menu == 'true' {
+    border-top: $border-menu;
+  }
+}
+
+// If menus have the text transform variable defined, add text transform.
+@mixin has-text-transform-menu-text() {
+  @if $text-transform-menu-text {
+    text-transform: $text-transform-menu-text;
+  }
+}
+
+// If menu background colors are set to true, add background colors.
+@mixin has-color-bg-menu-link($lvha) {
+  @if $has-color-bg-menu-link == 'true' {
+  	@if $lvha == 'link' {
+  		background-color: $color-bg-link-menu;
+  	} @else if $lvha == 'vis' {
+  		background-color: $color-bg-link-menu-vis;
+  	} @else if $lvha == 'hov' {
+		background-color: $color-bg-link-menu-hov;
+  	} @else if $lvha == 'foc' {
+  		background-color: $color-bg-link-menu-foc;
+  	} @else if $lvha == 'act' {
+  		background-color: $color-bg-link-menu-foc;
+  	} else {
+  		background-color: transparent;
+  	}
+  }
+}

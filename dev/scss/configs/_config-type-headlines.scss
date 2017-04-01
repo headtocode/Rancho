@@ -1,0 +1,32 @@
+///
+// Rancho Config - Headlines
+//
+// @group Config
+// @since 1.0.0-alpha.1
+///
+
+//  Headlines Font Families
+$font-family-headlines: $font-family-sans;
+$font-family-headlines-articles: $font-family-serif;
+
+// Headlines Font Size
+$font-size-headlines: #{ms(1)}em;
+
+// Headlines Font Size (Increase)
+$font-size-headlines-u1: #{ms(2)}em;
+$font-size-headlines-u2: #{ms(3)}em;
+$font-size-headlines-u3: #{ms(4)}em;
+$font-size-headlines-u4: #{ms(5)}em;
+$font-size-headlines-u5: #{ms(6)}em;
+
+// Headlines Font Size (Decrease)
+//
+// This is to give you the option of having your headline be equal to your
+// paragraph font size/area root font size (when using Font Zone size classes).
+$font-size-headlines-d1: #{ms(0)}em;
+
+// Headlines Font Weight
+$font-weight-headlines: $font-weight-bold;
+
+// Headlines Font Color
+$font-color-headlines: inherit;

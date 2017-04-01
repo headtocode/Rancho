@@ -1,0 +1,71 @@
+/**
+ * Typography - Font Colors
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Map, Selector, Property
+@include repeater-palette('.font-color', 'color', $palette);
+
+
+
+
+
+
+/**
+ * Typography - Font Colors - Inversed
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.font-color-inverse {
+  color: $color-font-inverse;
+}
+
+/* Adjust menu background and border color for inversed font-color sections. */
+.font-color-inverse .menu-item,
+.font-color-inverse .dropdown__nested-content {
+  border-color: color(gray-dark);
+}
+
+.font-color-inverse .dropdown__nested-content,
+.font-color-inverse .menu--sub-nested {
+  background: transparent;
+}
+
+/* Adjust link font colors for inversed font-color sections. */
+.font-color-inverse a:link,
+.font-color-inverse .dropdown-toggle,
+.font-color-inverse .dropdown-toggle--sub {
+  color: $color-link-inverse;
+}
+
+.font-color-inverse a:visited,
+.font-color-inverse .dropdown-toggle:visited,
+.font-color-inverse .dropdown-toggle--sub:visited {
+  color: $color-link-vis-inverse;
+}
+
+.font-color-inverse a:hover,
+.font-color-inverse .dropdown-toggle:hover,
+.font-color-inverse .dropdown-toggle--sub:hover {
+  color: $color-link-hov-inverse;
+}
+
+.font-color-inverse a:focus,
+.font-color-inverse .dropdown-toggle:focus,
+.font-color-inverse .dropdown-toggle--sub:focus {
+  color: $color-link-foc-inverse;
+}
+
+.font-color-inverse a:active,
+.font-color-inverse .dropdown-toggle:active,
+.font-color-inverse .dropdown-toggle--sub:active {
+  color: $color-link-act-inverse;
+}
+
+/* Mantain original form font colors for inversed font-color sections. */
+.font-color-inverse input,
+.font-color-inverse textarea {
+  color: $color-font;
+}
