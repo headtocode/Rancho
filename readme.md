@@ -9,7 +9,6 @@
 
 ## Table of Contents
 - [Get Started](#get-started)
-- [Status](#status)
 - [What You Get](#what-you-get)
 - [Documentation](#documentation)
 - [Versioning](#versioning)
