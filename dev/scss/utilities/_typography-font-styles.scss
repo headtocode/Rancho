@@ -1,0 +1,23 @@
+/**
+ * Typography - Font Styles
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+// Key gets added to selector name; value gets added to property argument.
+$_suffix-value: (
+  normal: normal,
+  italic: italic,
+  oblique: oblique,
+);
+
+// Selector, Property, Infix-Value Map
+@include repeater-responsive('.font-style', 'font-style', $_suffix-value);
+
+///
+// Example:
+//
+// .font-style-italic-md {
+//   font-style: italic;
+// }
+///

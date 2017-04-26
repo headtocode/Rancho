@@ -1,0 +1,43 @@
+/**
+ * Media Stacks
+ *
+ * @since 1.0.0-alpha.1
+ */
+
+.media-stack {
+  margin-bottom: spacer(y, u1) 0;
+}
+
+.media-stack__icon img {
+  height: auto;
+  margin: 0 auto spacer(y);
+  width: 100%;
+  max-width: 180px;
+}
+
+@media screen and (min-width: $media-query-mobile-nav) {
+  .media-stack {
+    display: flex;
+    width: 100%;
+  }
+
+  .media-stack__icon {
+    margin-right: spacer(x, u1);
+    width: 25%;
+  }
+
+  .media-stack__icon img {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .media-stack__content {
+    width: 75%;
+  }
+
+  .media-stack--reverse > .media-stack__icon {
+    order: 1;
+    margin-right: 0;
+    margin-left: spacer(x, u1);
+  }
+}

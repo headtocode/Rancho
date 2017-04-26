@@ -87,11 +87,12 @@
  * @since 1.0.0-alpha.1
  */
 
-.menu-has-borders .menu-item:not(:first-of-type) {
+.menu-has-borders > .menu-item:not(:first-of-type) {
   @include has-border-menu();
 }
 
-.menu--padded .menu-link {
+.menu--padded .menu-link,
+.menu--padded .btn {
   padding-right: spacer(x);
   padding-left: spacer(x);
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+  </head>
+  <body>
+    <div class="bb mb-u2">
+      {% include masthead-docs.html %}
+    </div>
+    <!-- {% include masthead-docs-section.html %} -->
+    <main class="container px">
+      <div class="row gutters-u2-md">
+        <div class="col-12 col-9-md">
+          <section class="pb-u4">
+            {{ content }}
+          </section>
+        </div>
+        <div class="col-12 col-3-md">
+          {% include nav-docs.html %}
+        </div>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

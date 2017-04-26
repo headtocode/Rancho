@@ -4,6 +4,10 @@
  * @since 1.0.0-alpha.1
  */
 
+body {
+  margin: 0;
+}
+
 html {
   background: color(bg-light);
 }
@@ -26,6 +30,15 @@ html {
 input[type="search"],
 hr {
   box-sizing: border-box;
+}
+
+
+/**
+ * Remove Margin/Paddings
+ */
+
+pre {
+  margin: 0;
 }
 
 
@@ -92,4 +105,14 @@ main,
 [role="main"],
 .main {
   flex: 1;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
 }

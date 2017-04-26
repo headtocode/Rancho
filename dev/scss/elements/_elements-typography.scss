@@ -87,7 +87,6 @@ p:last-child {
 
 small,
 .small {
-  display: inline-block;
   font-size: $font-size-d1;
   margin-bottom: 1em;
 }
@@ -111,4 +110,16 @@ blockquote {
 
 blockquote p {
   font-size: 1em;
+}
+
+
+/**
+ * Elements - Typograpy - Responsive Font Sizes
+ */
+
+@media screen and (min-width: $media-query-width-md) {
+  p,
+  .rfs {
+    font-size: $font-size-u1;
+  }
 }

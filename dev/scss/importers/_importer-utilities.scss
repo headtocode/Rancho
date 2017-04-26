@@ -33,6 +33,10 @@
 // @since 1.0.0-alpha.1
 @import '../utilities/typography-font-alignments';
 
+// Typography Font Styles
+// @since 1.0.0-alpha.1
+@import '../utilities/typography-font-styles';
+
 // Accessibility
 // @since 1.0.0-alpha.1
 @import '../utilities/accessibility';
@@ -49,29 +53,33 @@
 // @since 1.0.0-alpha.1
 @import '../utilities/background-images';
 
-// Flex Box
+// Flexbox
 // @since 1.0.0-alpha.1
 @import '../utilities/flexbox';
 
-// Flex Box Align Content
+// Flexbox Align Content
 // @since 1.0.0-alpha.1
 @import '../utilities/flexbox-align-content';
 
-// Flex Box Align Items
+// Flexbox Align Items
 // @since 1.0.0-alpha.1
 @import '../utilities/flexbox-align-items';
 
-// Flex Box Flex Direction
+// Flexbox Flex Direction
 // @since 1.0.0-alpha.1
 @import '../utilities/flexbox-flex-direction';
 
-// Flex Box Flex Wrap
+// Flexbox Flex Wrap
 // @since 1.0.0-alpha.1
 @import '../utilities/flexbox-flex-wrap';
 
-// Flex Box Justify Content
+// Flexbox Justify Content
 // @since 1.0.0-alpha.1
 @import '../utilities/flexbox-justify-content';
+
+// Flexbox Align Self
+// @since 1.0.0-alpha.2
+@import '../utilities/flexbox-align-self';
 
 // Effects - Shadows
 // @since 1.0.0-alpha.1

@@ -5,33 +5,33 @@
  */
 
 .ba {
-  border: $border;
+  border: $border !important;
 }
 
 .by {
-  border-top: $border;
-  border-bottom: $border;
+  border-top: $border !important;
+  border-bottom: $border !important;
 }
 
 .bx {
-  border-left: $border;
-  border-right: $border;
+  border-left: $border !important;
+  border-right: $border !important;
 }
 
 .bt {
-  border-top: $border;
+  border-top: $border !important;
 }
 
 .br {
-  border-right: $border;
+  border-right: $border !important;
 }
 
 .bb {
-  border-bottom: $border;
+  border-bottom: $border !important;
 }
 
 .bl {
-  border-left: $border;
+  border-left: $border !important;
 }
 
 
@@ -46,7 +46,7 @@
 
 
 /**
- * Utilities - Borders - Border Colors
+ * Utilities - Borders - Border Widths
  *
  * @since 1.0.0-alpha.1
  */
@@ -65,7 +65,7 @@ $_suffix-value: (
 );
 
 // Selector, Property, Map
-@include repeater('.bw', 'border-width', $_suffix-value);
+@include repeater('.bw', 'border-width', $_suffix-value, true);
 
 
 /**
@@ -74,6 +74,6 @@ $_suffix-value: (
  * @since 1.0.0-alpha.1
  */
 
-.bdr-radius-disk {
-  border-radius: 50%;
+.rd-disk {
+  border-radius: 50% !important;
 }

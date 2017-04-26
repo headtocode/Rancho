@@ -14,16 +14,9 @@
 // @since 1.0.0-alpha.1
 ///
 
-// Site Backgrounds
-$color-bg-body: #fbfbfb !default;
-
-// Brand Colors
-$color-brand-primary: #d72346 !default;
-$color-brand-secondary: #421347 !default;
-
 // Set Spectrum
-$color-red: #d72346 !default;
-$color-orange: #d43900 !default;
+$color-red: #c12839 !default;
+$color-orange: #d05a28 !default;
 $color-yellow: #f6c54e !default;
 $color-green: #0a7a44 !default;
 $color-blue: #006dbb !default;
@@ -31,12 +24,19 @@ $color-purple: #421349 !default;
 
 // Set Grayscale
 $color-black: #000 !default;
-$color-gray-darker: #252526 !default;
+$color-gray-darker: #353536 !default;
 $color-gray-dark: #494b4d !default;
 $color-gray: #6c6e70 !default;
 $color-gray-light: #d2d7d9 !default;
 $color-gray-lighter: #ebf0f2 !default;
 $color-white: #fff !default;
+
+// Site Backgrounds
+$color-bg-body: $color-white !default;
+
+// Brand Colors
+$color-brand-primary: $color-red !default;
+$color-brand-secondary: $color-orange !default;
 
 // Set Status Colors
 $color-state-danger: $color-red !default;

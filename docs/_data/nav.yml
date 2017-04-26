@@ -1,0 +1,110 @@
+- title: "Getting Started"
+  href: "/get-started/"
+
+- title: "Configuration"
+  subcategories:
+    - subtitle: "Colors"
+      subhref: "/configuration/colors/"
+    - subtitle: "Typography"
+      subhref: "/configuration/typography/"
+    - subtitle: "Spacers"
+      subhref: "/configuration/spacers/"
+    - subtitle: "Grid"
+      subhref: "/configuration/grid/"
+    - subtitle: "Configuring Components"
+      subhref: "/configuration/configuring-components/"
+    - subtitle: "Functions"
+      subhref: "/configuration/functions/"
+    - subtitle: "Mixins"
+      subhref: "/configuration/mixins/"
+    - subtitle: "Normalizers"
+      subhref: "/configuration/normalizers/"
+
+- title: "Elements"
+  subcategories:
+    - subtitle: "Forms"
+      subhref: "/elements/forms/"
+    - subtitle: Images
+      subhref: "/elements/images/"
+    - subtitle: Links
+      subhref: "/elements/links/"
+    - subtitle: Lists
+      subhref: "/elements/lists/"
+    - subtitle: Tables
+      subhref: "/elements/tables/"
+    - subtitle: Typography
+      subhref: "/elements/typography/"
+    - subtitle: Misc
+      subhref: "/elements/misc/"
+
+- title: "Components"
+  subcategories:
+    - subtitle: "Badges"
+      subhref: "/components/badges/"
+    - subtitle: "Billboards"
+      subhref: "/components/billboards/"
+    - subtitle: "Branding"
+      subhref: "/components/branding/"
+    - subtitle: "Buttons"
+      subhref: "/components/buttons/"
+    - subtitle: "Cards"
+      subhref: "/components/cards/"
+    - subtitle: "Forms"
+      subhref: "/components/forms/"
+    - subtitle: "Menus"
+      subhref: "/components/menus/"
+    - subtitle: "Pagination"
+      subhref: "/components/pagination/"
+    - subtitle: "Progress Bars"
+      subhref: "/components/progress-bars/"
+    - subtitle: "Videos"
+      subhref: "/components/videos/"
+
+- title: "JavaScript Components"
+  subcategories:
+    - subtitle: "Dropdowns"
+      subhref: "/javascript-components/dropdowns/"
+    - subtitle: "Dropdown Toggle"
+      subhref: "/javascript-components/dropdown-toggle/"
+    - subtitle: "Trigger Buttons"
+      subhref: "/javascript-components/trigger-buttons/"
+    - subtitle: "Accordions"
+      subhref: "/javascript-components/accordions/"
+    - subtitle: "Modals"
+      subhref: "/javascript-components/modals/"
+    - subtitle: "Tabs"
+      subhref: "/javascript-components/tabs/"
+
+- title: "Layouts"
+  subcategories:
+    - subtitle: Containers
+      subhref: "/layouts/containers/"
+    - subtitle: "Grids"
+      subhref: "/layouts/grids/"
+    - subtitle: "Media Objects"
+      subhref: "/layouts/media-objects/"
+    - subtitle: "Media Stacks"
+      subhref: "/layouts/media-stacks/"
+    - subtitle: "Sections"
+      subhref: "/layouts/sections/"
+
+- title: "Utilities"
+  subcategories:
+    - subtitle: "Accessibility"
+      subhref: "/utilities/accessibility/"
+    - subtitle: "Backgrounds"
+      subhref: "/utilities/backgrounds/"
+    - subtitle: "Box Model"
+      subhref: "/utilities/box-model/"
+    - subtitle: "Effects"
+      subhref: "/utilities/effects/"
+    - subtitle: "Flexbox"
+      subhref: "/utilities/flexbox/"
+    - subtitle: "Typography"
+      subhref: "/utilities/typography/"
+
+- title: "Included Plugins"
+  href: "/included-plugins/"
+
+- title: "Customizing Rancho"
+  href: "/customizing-rancho/"

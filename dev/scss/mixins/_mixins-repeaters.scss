@@ -15,15 +15,18 @@
 // @since 1.0.0-alpha.1
 ///
 
-@mixin repeater($selector, $property, $map) {
+@mixin repeater($selector, $property, $map, $important: false) {
+  @if $important == true {
+    $important: ' !important';
+  }
   @each $key, $value in $map {
     @if $key == null {
       #{$selector} {
-         #{$property}: $value; /*! Boop */
+         #{$property}: $value#{$important};
       }
     } @else {
       #{$selector}-#{$key} {
-         #{$property}: $value;
+         #{$property}: $value#{$important};
       }
     }
   }

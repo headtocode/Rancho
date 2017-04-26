@@ -12,7 +12,8 @@ abbr[title] {
 hr {
   border-style: none;
   border-bottom: $border-alt;
-  margin-bottom: spacer(y);
+  margin-top: spacer(y, u1);
+  margin-bottom: spacer(y, u1);
   outline: none;
 }
 
@@ -30,10 +31,10 @@ pre {
  * http://prismjs.com/
  */
 
-code {
-  border-radius: $border-radius;
-  background: color(black);
-  color: lime;
-  display: inline-block; /* To apply padding to inline code samples. */
-  padding: 0 spacer(x);
-}
+// code {
+//   border-radius: $border-radius;
+//   background: color(black);
+//   color: lime;
+//   display: inline-block; /* To apply padding to inline code samples. */
+//   padding: 0 spacer(x);
+// }

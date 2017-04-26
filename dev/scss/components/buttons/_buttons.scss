@@ -10,7 +10,7 @@ a.btn {
   border: $border-btn;
   color: $color-font-btn;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
     align-items: center;
     justify-content: space-between;
   font-family: $font-family-btn;

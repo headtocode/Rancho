@@ -5,7 +5,7 @@
  */
 
 // Map, Selector, Property
-@include repeater-palette('.font-color', 'color', $palette);
+@include repeater-palette('.text', 'color', $palette);
 
 
 

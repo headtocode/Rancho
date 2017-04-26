@@ -1,0 +1,13 @@
+title: Rancho
+email: pete@rancho.run
+description: Rancho is a fast and well designed HTML and SCSS framework for building responsive web pages and applications.
+baseurl: ""
+url: https://rancho.run
+twitter_username: ranchoframework
+github_username: headtocode
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -26,7 +26,7 @@ $border-card: $border-width-card $border-style-card $color-border-card !default;
 
 // Card Box Shadow
 $has-box-shadow-card: 'true' !default;
-$box-shadow-card: $box-shadow !default;
+$box-shadow-card: $box-shadow-u1 !default;
 
 // Card Spacers (Margin & Padding)
 $spacer-card-x: spacer(x) !default;
