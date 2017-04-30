@@ -5,7 +5,7 @@ description:
 group: media-objects
 ---
 
-## Media Objects
+# Media Objects
 
 Media objects in their simplest form are nothing more than an image and text aligned vertically along the center axis. They&rsquo;re commonly used on things like comment headers, blog posts and other messaging systems. Media Objects are displayed using flexbox and can accept any of the <a href="utilities/flexbox">Rancho Flexbox</a> utility classes related to alignment, justification, and more.
 

@@ -1,0 +1,200 @@
+<h2 id="media-stacks">Media Stacks</h2>
+
+<p>Media Stacks are similar to <a href="/layouts/media-objects.html">Media Objects</a> when viewed on larger screens, the key difference being that they stack when viewed on mobile displays, with the image above the content. Media Stacks are tied to the same media query that determines when nav menus switch to their mobile view.</p>
+
+<h2 class="h4 mt-u4">Default Media Stack</h2>
+<p>Media stacks display two columns, with the left column taking up 25% of space and the right taking 75% when viewed on wide displays; the left content sits above the right when viewed on smaller device widths.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="media-stack my-u2">
+    <div class="media-stack__icon">
+      <img src="../../assets/images/img1-thumb.jpg" alt="A plastic toy dinosaur in front of a house plant." />
+    </div>
+    <div class="media-stack__content">
+      <h2 class="headline h5">
+        Media Stack Title
+      </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.</p>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">".."</span> <span class="na">alt=</span><span class="s">".."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"headline h5"</span><span class="nt">&gt;</span>
+      Media Stack Title
+    <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 class="h4 mt-u4">Reversed Media Stack</h2>
+<p>Media Stacks can be reversed, placing the image to the right of the content. Note that the content itself remains aligned to the left of the Media Stack by default.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="media-stack media-stack--reverse my-u2">
+    <div class="media-stack__icon">
+      <img src="../../assets/images/img1-thumb.jpg" alt="A plastic toy dinosaur in front of a house plant." />
+    </div>
+    <div class="media-stack__content">
+      <h2 class="headline h5">
+        Media Stack Title
+      </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.</p>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack media-stack--reverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">".."</span> <span class="na">alt=</span><span class="s">".."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"headline h5"</span><span class="nt">&gt;</span>
+      Media Stack Title
+    <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 class="h4 mt-u4">Centered Media Stack</h2>
+<p>Media Stacks can be centered along the horizontal axis using the appropriate Rancho Flexbox utility class. Note that you do not need to include the display flex utility, as Media Stacks are already displaying with flexbox by default.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="media-stack my-u2 align-items-center-nv">
+    <div class="media-stack__icon">
+      <img class="rd-disk" src="../../assets/images/img1-thumb.jpg" alt="A plastic toy dinosaur in front of a house plant." />
+    </div>
+    <div class="media-stack__content">
+      <h2 class="headline h5">
+        Media Stack Title
+      </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.</p>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack align-items-center-nv"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"rd-disk"</span> <span class="na">src=</span><span class="s">".."</span> <span class="na">alt=</span><span class="s">".."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"headline h5"</span><span class="nt">&gt;</span>
+      Media Stack Title
+    <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 class="h4 mt-u4">Media Stack With Side Content</h2>
+<p>Media Stacks are contain content below the image, making them useful for blog posts and other contained content. Note the use of a <a href="/compomemts/cards/">card component</a> in the below example.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="card pa-u2">
+    <div class="media-stack">
+      <div class="media-stack__icon">
+        <img class="rd-disk" src="../../assets/images/img1-thumb.jpg" alt="A plastic toy dinosaur in front of a house plant." />
+        <div class="py-u1">
+          <ul class="no-style font-style-italic text-subdued">
+            <li><i class="fa fa-fw fa-user" aria-hidden="true"></i> Pete Medina</li>
+            <li><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> November 2019</li>
+            <li><i class="fa fa-fw fa-rebel" aria-hidden="true"></i> Pilot</li>
+          </ul>
+        </div>
+      </div>
+      <div class="media-stack__content">
+        <h2 class="headline h3">
+          Media Stack Title
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.</p>
+        <p>Harum animi eos consectetur similique molestiae distinctio laboriosam porro facilis sequi enim. A magni, culpa voluptates odit reiciendis.</p>
+        <a class="btn" href="#">Read More <span class="sr-only">about Media Stack Title</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card pa-u2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"rd-disk"</span> <span class="na">src=</span><span class="s">"../../assets/images/img1-thumb.jpg"</span> <span class="na">alt=</span><span class="s">"A plastic toy dinosaur in front of a house plant."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-u1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"no-style font-style-italic text-subdued"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-user"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Pete Medina<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-calendar"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> November 2019<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-rebel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Pilot<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"headline h3"</span><span class="nt">&gt;</span>
+        Media Stack Title
+      <span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Harum animi eos consectetur similique molestiae distinctio laboriosam porro facilis sequi enim. A magni, culpa voluptates odit reiciendis.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Read More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>about Media Stack Title<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 class="h4 mt-u4">Media Stack Without Image</h2>
+<p>Media Stacks don’t always require an image. Note the use of a <a href="/utilities/spacers.html">padding top utility class</a> in the example below. We do that to better align the icons with the title text; such a technique is highly dependent on the font family and size you are using, and may not be necessary in all cases.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="card pa-u2">
+    <div class="media-stack">
+      <div class="media-stack__icon">
+        <div class="pt-d1 pb-u1">
+          <ul class="no-style font-style-italic text-subdued">
+            <li><i class="fa fa-fw fa-user" aria-hidden="true"></i> Pete Medina</li>
+            <li><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> November 2019</li>
+            <li><i class="fa fa-fw fa-rebel" aria-hidden="true"></i> Pilot</li>
+          </ul>
+        </div>
+      </div>
+      <div class="media-stack__content">
+        <h2 class="headline h3">
+          Media Stack Title
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.</p>
+        <p>Harum animi eos consectetur similique molestiae distinctio laboriosam porro facilis sequi enim. A magni, culpa voluptates odit reiciendis.</p>
+        <a class="btn" href="#">Read More <span class="sr-only">about Media Stack Title</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card pa-u2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pt-d1 pb-u1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"no-style font-style-italic text-subdued"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-user"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Pete Medina<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-calendar"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> November 2019<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-fw fa-rebel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> Pilot<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-stack__content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"headline h3"</span><span class="nt">&gt;</span>
+        Media Stack Title
+      <span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis eos facere rerum, minima, saepe consequatur fugit libero hic quisquam et tenetur excepturi cumque laudantium rem debitis eaque ut ipsum.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Harum animi eos consectetur similique molestiae distinctio laboriosam porro facilis sequi enim. A magni, culpa voluptates odit reiciendis.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Read More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>about Media Stack Title<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>

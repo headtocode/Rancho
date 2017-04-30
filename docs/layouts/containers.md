@@ -5,16 +5,16 @@ description:
 group: layouts
 ---
 
-## Containers
+# Containers
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat nostrum earum error voluptatum, nemo non, rem hic dolorem libero, id optio soluta enim placeat quia suscipit nulla, quas dicta.
 
-Containers are not meant to be placed side by side; use <a href="/layouts/grids.html">grids</a> for patterns that require multi-column layouts.
+Containers are not meant to be placed side by side; use [grids]({{ site.baseurl }}/layouts/grids.html) for patterns that require multi-column layouts.
 
-<h2 class="h5 mt-u4">Default Container</h2>
+## Default Container
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta molestiae vel praesentium dolorum.
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container bg-color-green">
     <p class="bg-color-gray">This is a container.</p>
   </div>
@@ -26,10 +26,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta moles
 </div>
 ```
 
-<h2 class="h5 mt-u4">Default Container With Responsive Padding</h2>
+## Default Container With Responsive Padding
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta molestiae vel praesentium dolorum.
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container px mb bg-color-gray-light">
     <p class="bg-color-gray">This is a container.</p>
   </div>
@@ -70,10 +70,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta moles
 </div>
 ```
 
-<h2 class="h5 mt-u4">Medium Container</h2>
+## Medium Container
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta molestiae vel praesentium dolorum.
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container-medium pa bg-color-gray-light">
     <p class="bg-color-gray">This is a medium container.</p>
   </div>
@@ -85,10 +85,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta moles
 </div>
 ```
 
-<h2 class="h5 mt-u4">Small Container</h2>
+## Small Container
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta molestiae vel praesentium dolorum.
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container-small pa bg-color-gray-light">
     <p class="bg-color-gray">This is a small container.</p>
   </div>
@@ -100,10 +100,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta moles
 </div>
 ```
 
-<h2 class="h5 mt-u4">Small Container With Form</h2>
+## Small Container With Form
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi soluta molestiae vel praesentium dolorum.
 
-<div class="ba bw-d3 pa-u1-md">
+<div class="rd__example">
   <div class="container-small pa">
     <div class="card">
       <div class="card__header bg-color-brand">

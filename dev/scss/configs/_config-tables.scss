@@ -6,7 +6,7 @@
 ///
 
 // Table Border
-$table-border: 2px solid $color-border;
+$table-border: 1px solid $color-border;
 
 // Table Padding
 $table-cell-padding: spacer(x, d1); /* XY */
@@ -15,7 +15,7 @@ $table-cell-padding: spacer(x, d1); /* XY */
 $table-bg: color(white);
 
 // Table Background Accent
-$table-bg-accent: #f4f6f7;
+$table-bg-accent: lighten(color(gray-lighter), 2%);
 
 // Table Head Background
 $tablehead-bg: color(brand);

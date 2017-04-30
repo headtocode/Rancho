@@ -1,0 +1,137 @@
+<h2 id="grids">Grids</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat nostrum earum error voluptatum, nemo non, rem hic dolorem libero, id optio soluta enim placeat quia suscipit nulla, quas dicta.</p>
+
+<p>Containers are not meant to be placed side by side; use <a href="/layouts/grids.html">grids</a> for patterns that require multi-column layouts.</p>
+
+<h2 class="h5 mt-u4">Default Grid</h2>
+<p>Grid columns are all equal widths by default and will collapse into new rows if packed too tightly; this happens automatically thanks to their flexbox display property.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="container">
+    <div class="row">
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 1</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 2</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 class="h5 mt-u4">Default Grid With Gutters</h2>
+<p>Grids can have gutters by adding a gutter class to the parent row class. Gutters can be any width that matches the <a href="/utilities/spacers.html">spacer utility class</a> padding widths.</p>
+
+<p>Note that it is recommended that any containers holding a grid with gutters use the <a href="/utilities/display.html">overflow hidden display utility class</a>, otherwise the row’s top padding will overflow the top of the container.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="container overflow-hidden">
+    <div class="row gutters">
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 1</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 2</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 3</p>
+      </div>
+    </div>
+  </div>
+  <p>...</p>
+  <div class="container overflow-hidden">
+    <div class="row gutters-u6">
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 1</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 2</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container overflow-hidden"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gutters"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container overflow-hidden"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gutters-u6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 class="h5 mt-u4">Default Grid With Responsive Gutters</h2>
+<p>Gutter widths can change depending on viewport width by using responsive modifiers; the example below has no gutters at the smallest size.</p>
+
+<div class="ba bw-d3 pa-u1">
+  <div class="container overflow-hidden">
+    <div class="row gutters-sm gutters-u1-md gutters-u2-lg">
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 1</p>
+      </div>
+      <div class="col-auto bg-color-gray-light">
+        <p class="bg-color-gray">Column 2</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container overflow-hidden"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gutters-sm gutters-u1-md gutters-u2-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>

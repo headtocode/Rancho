@@ -23,18 +23,5 @@ iframe {
 
 pre {
   max-width: 100%;
+  padding: spacer(x);
 }
-
-
-/**
- * Consider using something like PrismJS to create better code styles.
- * http://prismjs.com/
- */
-
-// code {
-//   border-radius: $border-radius;
-//   background: color(black);
-//   color: lime;
-//   display: inline-block; /* To apply padding to inline code samples. */
-//   padding: 0 spacer(x);
-// }

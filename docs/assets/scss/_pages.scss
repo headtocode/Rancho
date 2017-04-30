@@ -1,0 +1,29 @@
+/**
+ * Docs - Page Layouts
+ *
+ * All classes in the Rancho docs are styled as descendents of
+ * the .rd body class, which stands for Rancho Docs.
+ *
+ * @since 1.0.0-alpha.2
+ */
+
+.rd {
+  .rd__page > h2 {
+    font-size: $font-size-h4;
+    margin-top: spacer(y, u5);
+  }
+
+  .rd__page p > code {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+
+  .rd__page .highlighter-rouge:not(:last-of-type) {
+    margin-bottom: spacer(y, u3);
+  }
+
+  .rd__example {
+    border: $rd-border;
+    padding: spacer(y, u2) spacer(x, u1);
+  }
+}

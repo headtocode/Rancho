@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 	livereload = require('gulp-livereload'),
 	del = require('del');
 
-// Styles
+// Style Rancho
 gulp.task('styles', function() {
 	return sass('dev/scss/rancho.scss', { style: 'expanded' })
 		.pipe(autoprefixer('last 3 versions'))
@@ -22,7 +22,17 @@ gulp.task('styles', function() {
 		.pipe(cleancss())
 		.pipe(gulp.dest('public/assets/css'))
 		.pipe(gulp.dest('docs/assets/css'))
-		.pipe(notify({ message: 'Styles task complete' }));
+		.pipe(notify({ message: '(▀L▀) Rancho styling task complete.' }));
+});
+
+// Style Rancho Docs
+gulp.task('doc-styles', function() {
+	return sass('docs/assets/scss/rancho.docs.scss', { style: 'expanded' })
+		.pipe(autoprefixer('last 3 versions'))
+		.pipe(cleancss())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('docs/assets/css'))
+		.pipe(notify({ message: '(▀L▀) Rancho docs styling task complete.' }));
 });
 
 // Scripts
@@ -59,8 +69,10 @@ gulp.task('default', ['clean'], function() {
 
 // Watch
 gulp.task('watch', function() {
-	// Watch .scss files
+	// Watch Rancho .scss files
 	gulp.watch('dev/scss/**/*.scss', ['styles']);
+	// Watch Rancho Docs .scss files
+	gulp.watch('docs/assets/scss/**/*.scss', ['doc-styles']);
 	// Watch .js files
 	gulp.watch('dev/scripts/**/*.js', ['scripts']);
 	// Watch image files

@@ -85,8 +85,11 @@
       subhref: "/layouts/media-objects/"
     - subtitle: "Media Stacks"
       subhref: "/layouts/media-stacks/"
-    - subtitle: "Sections"
-      subhref: "/layouts/sections/"
+
+- title: "Sections"
+  subcategories:
+    - subtitle: "Masthead"
+      subhref: "/sections/masthead/"
 
 - title: "Utilities"
   subcategories:
