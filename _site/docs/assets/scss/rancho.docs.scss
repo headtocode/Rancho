@@ -1,0 +1,15 @@
+/*!
+ * Rancho Docs (https://rancho.run)
+ * Copyright 2017 Pete Medina
+ */
+
+// Get the Rancho config variables
+@import "../../../dev/scss/importers/importer-configs";
+
+// Rancho Doc Variables
+$rd-border: 4px solid $color-gray-lighter;
+
+
+// Load docs dependencies
+@import "pages";
+@import "syntax";

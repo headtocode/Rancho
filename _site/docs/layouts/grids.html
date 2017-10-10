@@ -1,13 +1,13 @@
-<h2 id="grids">Grids</h2>
+<h1 id="grids">Grids</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat nostrum earum error voluptatum, nemo non, rem hic dolorem libero, id optio soluta enim placeat quia suscipit nulla, quas dicta.</p>
 
 <p>Containers are not meant to be placed side by side; use <a href="/layouts/grids.html">grids</a> for patterns that require multi-column layouts.</p>
 
-<h2 class="h5 mt-u4">Default Grid</h2>
+<h2 id="default-grid">Default Grid</h2>
 <p>Grid columns are all equal widths by default and will collapse into new rows if packed too tightly; this happens automatically thanks to their flexbox display property.</p>
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container">
     <div class="row">
       <div class="col-auto bg-color-gray-light">
@@ -39,12 +39,12 @@
 </code></pre>
 </div>
 
-<h2 class="h5 mt-u4">Default Grid With Gutters</h2>
+<h2 id="default-grid-with-gutters">Default Grid With Gutters</h2>
 <p>Grids can have gutters by adding a gutter class to the parent row class. Gutters can be any width that matches the <a href="/utilities/spacers.html">spacer utility class</a> padding widths.</p>
 
-<p>Note that it is recommended that any containers holding a grid with gutters use the <a href="/utilities/display.html">overflow hidden display utility class</a>, otherwise the row’s top padding will overflow the top of the container.</p>
+<p>Note that it is recommended that any containers holding a grid with gutters use the <a href="/utilities/display.html">overflow hidden display utility class</a>, otherwise the top padding applied to the row will overflow the top of the container.</p>
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container overflow-hidden">
     <div class="row gutters">
       <div class="col-auto bg-color-gray-light">
@@ -104,10 +104,10 @@
 </code></pre>
 </div>
 
-<h2 class="h5 mt-u4">Default Grid With Responsive Gutters</h2>
+<h2 id="default-grid-with-responsive-gutters">Default Grid With Responsive Gutters</h2>
 <p>Gutter widths can change depending on viewport width by using responsive modifiers; the example below has no gutters at the smallest size.</p>
 
-<div class="ba bw-d3 pa-u1">
+<div class="rd__example">
   <div class="container overflow-hidden">
     <div class="row gutters-sm gutters-u1-md gutters-u2-lg">
       <div class="col-auto bg-color-gray-light">
@@ -115,6 +115,54 @@
       </div>
       <div class="col-auto bg-color-gray-light">
         <p class="bg-color-gray">Column 2</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container overflow-hidden"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row gutters-sm gutters-u1-md gutters-u2-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 1<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 2<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Column 3<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="variable-width-columns">Variable Width Columns</h2>
+<p>You can create columns of various widths by using a column size class, which is written as <code class="highlighter-rouge">.col-*-md</code> where <code class="highlighter-rouge">*</code> represents the number of columns your content will span.</p>
+
+<p>Rancho ships with a twelve column grid by default; you can <a href="/configuration/grids">increase or decrease the number of columns</a> by editing the appropriate configuration file.</p>
+
+<div class="rd__example">
+  <div class="container overflow-hidden">
+    <div class="row gutters">
+      <div class="col-12 col-3-md bg-color-gray-light">
+        <p class="bg-color-gray">Column 1/4</p>
+      </div>
+      <div class="col-12 col-9-md bg-color-gray-light">
+        <p class="bg-color-gray">Column 3/4</p>
+      </div>
+    </div>
+  </div>
+  <p>...</p>
+  <div class="container overflow-hidden">
+    <div class="row gutters">
+      <div class="col-12 col-3-md bg-color-gray-light">
+        <p class="bg-color-gray">Column 1/4</p>
+      </div>
+      <div class="col-12 col-3-md bg-color-gray-light">
+        <p class="bg-color-gray">Column 1/4</p>
+      </div>
+      <div class="col-12 col-6-md bg-color-gray-light">
+        <p class="bg-color-gray">Column 1/2</p>
       </div>
     </div>
   </div>

@@ -53,7 +53,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *    IE on Windows Phone and in iOS.
  */
 html {
-  line-height: 1.15;
+  line-height: 1.5;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -179,8 +179,6 @@ kbd,
 samp {
   font-family: monospace, monospace;
   /* 1 */
-  font-size: 1em;
-  /* 2 */
 }
 
 /**
@@ -682,7 +680,7 @@ blockquote p {
  * @since 1.0.0-alpha.1
  */
 table {
-  border: 2px solid #ebf0f2;
+  border: 1px solid #ebf0f2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin-bottom: 16px;
   text-align: left;
@@ -703,7 +701,7 @@ table caption {
 }
 
 tr {
-  border-bottom: 2px solid #ebf0f2;
+  border-bottom: 1px solid #ebf0f2;
   vertical-align: top;
 }
 
@@ -713,8 +711,8 @@ td, th {
 }
 
 td, th {
-  border-right: 2px solid #ebf0f2;
-  border-left: 2px solid #ebf0f2;
+  border-right: 1px solid #ebf0f2;
+  border-left: 1px solid #ebf0f2;
 }
 
 thead th {
@@ -722,7 +720,7 @@ thead th {
 }
 
 tfoot {
-  border-top: 2px solid #ebf0f2;
+  border-top: 1px solid #ebf0f2;
   padding: 8px 0;
 }
 
@@ -733,7 +731,7 @@ tbody tr:nth-child(odd) {
 
 tbody .even,
 tbody tr:nth-child(even) {
-  background: #f4f6f7;
+  background: #f1f5f6;
 }
 
 /**
@@ -812,12 +810,9 @@ iframe {
 
 pre {
   max-width: 100%;
+  padding: 16px;
 }
 
-/**
- * Consider using something like PrismJS to create better code styles.
- * http://prismjs.com/
- */
 /**
  * Elements - Links
  *
